@@ -1,0 +1,228 @@
+// ======可套用樣式======
+body
+  overflow-x: hidden
+.d-flex
+  display: flex
+
+.container
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 20px
+.container-fluid
+  width: 100%
+
+.mb-21
+  margin-bottom: 21px
+
+.point
+  position: relative
+  &::after
+    content: ''
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background: $b9
+    position: absolute
+    top: 9px
+    left: -32px
+
+.point-line
+  &::before
+    content: ''
+    width: 1px
+    height: 66px
+    border-radius: 50%
+    background: $b9
+    position: absolute
+    top: 18px
+    left: -24.51px
+    +rwd(601)
+      height: 80px
+    +rwd(360)
+      height: 125px
+
+
+.border-line
+  position: relative
+  &::before
+    content: ''
+    width: 2px
+    height: 100%
+    background: $b9
+    position: absolute
+    left: 0
+    top: 0
+// =====公用樣式設定=====
+
+
+.textBlock
+  margin-bottom: 70px
+  &_img
+    padding: 48px 0 
+
+  &_title
+    +flex(flex-start,center)
+    border-bottom: 1px solid $b
+    padding: 0 0 8px 0 
+    margin: 0 0 14px 0 
+    &_main
+      font-size: px(32)
+      font-family: 'PingFang_medium'
+      margin: 0 16px 0  0
+      line-height: 1.40625em
+      +r767
+        font-size: px(28)
+    &_second
+      font-size: px(24)
+      font-family: 'Roboto_medium'
+      color: $ra
+      line-height: 1.875em
+      margin: 0
+      +r767
+        font-size: px(20)
+        transform: translateY(3px)
+  &_body
+    padding: 0 0 0 50px
+
+  &_item
+    font-size: 24px
+    line-height: 1.5em
+    font-family: 'PingFang_light','Microsoft JhengHei'
+    margin-bottom: 29px
+    +r767
+      font-size: 20px
+
+.textBlock-center
+  background: $b4
+  padding: 24px 0 0 0
+  +flex
+  flex-direction: column
+  color: $w 
+  .textBlock
+
+    &_title
+      border-bottom: 1px solid $w  
+      width: 100%
+      +flex
+      &_second
+        color: $w
+
+    &_body
+      
+    &_item
+      margin-bottom: 10px
+      
+.textBlock_item-article
+  h3
+    font-size: px(24)
+    line-height: 1.5em
+    font-family: 'PingFang_medium'
+    margin: 0 0 6px 0 
+    +r767
+      font-size: px(20)
+  img
+    margin-bottom: 8px
+  p
+    font-size: px(20)
+    width: 642px
+    line-height: 1.5em
+    +r767
+      width: auto
+      font-size: px(16)
+
+// ======個別樣式=======
+.handsome-img
+  width: 200px
+  height: 200px
+  border-radius: 50%
+.name
+  font-size: px(80)
+  font-family: 'AndaleMono'
+  color: $b
+  line-height: 1.125em
+  padding: 48px 0 24px 0 
+  margin: 0
+  position: relative
+  +r767
+    font-size: px(60)
+  &::after
+    content: ''
+    width: 100%
+    height: 2px
+    background: $b
+    position: absolute
+    bottom: 0
+    left: 0
+
+
+.education
+  .textBlock_title_main
+    margin-left: 9px
+
+.skill
+  position: relative
+
+  .bg
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    width: 100%
+    height: 360px
+    background: $b9
+    z-index: -1
+  .textBlock
+    padding: 23px 0 55px 0
+    &_title
+      width: 83%
+      margin: 0 0 40px 0 
+    &_body
+      padding: 0 0 0 24px
+      
+    
+    &_item
+      font-family: 'Roboto_light','PingFang_light'
+
+.work
+  .textBlock
+    &_title
+      margin: 0 0 19px 0 
+
+    &_body
+      &::before
+        left: 23px
+      
+
+.footer
+  background: $b4
+  padding-bottom: 34px
+  padding: 0 20px
+  &-icon
+    width: 192px
+    margin-top: 20px
+    +flex(space-between,center)
+    .icon-hover
+      transition: all .5s
+    a
+      &:hover
+        .icon-hover
+          transform: translateY(-10px)
+  .textBlock
+    margin-bottom: 0px
+
+    &_title
+      margin-bottom: 31px
+      +r767
+        margin-bottom: 15px
+
+    &_item
+      margin-bottom: 13px
+      +r767
+        font-size: px(18)
+      a
+        color: #fff
+    &_body
+      +flex
+      flex-direction: column
+      padding: 0

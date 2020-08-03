@@ -1,0 +1,36 @@
+@function px($px)
+    @return $px / 16 * 1rem
+
+
+@mixin flex($jc:center,$ai:center)
+    display: flex 
+    justify-content: $jc
+    align-items: $ai
+
+//置中
+@mixin poac
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+
+
+
+// rwd 斷點
+@mixin rwd($max)
+    @media only screen and (max-width: $max + px)  
+        @content
+
+@mixin r1200
+    @media only screen and (max-width: 1200px)  
+        @content
+
+@mixin r992
+    @media only screen and (max-width: 992px)  
+        @content
+
+@mixin r767
+    @media only screen and (max-width: 767px)  
+        @content
+
+
