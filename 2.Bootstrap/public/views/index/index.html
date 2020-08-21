@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&amp;family=Roboto:ital,wght@0,400;0,700;1,400;1,900&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light px-0"><a class="order-2 order-md-0 navbar-brand py-3 m-0" href="../index/index.html">Furniture</a>
+          <button class="order-1 navbar-toggler border-0" type="button" data-toggle="modal" data-target="#headerModal" aria-controls="headerNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="text-white material-icons">dehaze</span></button>
+          <div class="collapse navbar-collapse" id="headerNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="../product/product.html">產品</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">部落格</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">聯絡我們</a></li>
+              <li class="nav-item d-none d-md-block"><a class="nav-link material-icons pr-0" href="#">shopping_cart</a></li>
+            </ul>
+          </div><a class="order-3 d-md-none text-white nav-link material-icons pr-0" href="../product/product.html">shopping_cart</a>
+        </nav>
+      </div>
+    </header>
+    <div class="modal fade header_modal" id="headerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog m-0 w-100 h-100">
+        <div class="modal-content border-0 rounded-0 w-100 h-100">
+          <div class="modal-header d-flex justify-content-between align-items-center border-0">
+            <button class="m-0 close" type="button" data-dismiss="modal" aria-label="Close"><span class="material-icons" aria-hidden="true">arrow_back</span></button><a class="text-dark nav-link material-icons p-0" href="#">shopping_cart</a>
+          </div>
+          <div class="modal-body">
+            <div class="accordion" id="accordionExample">
+              <div class="card border-0 rounded-0"><a class="btn btn-link btn-block text-left border-bottom text-dark h4 font-weight-bold" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Product</a>
+                <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body p-3">
+                    <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-secondary" href="">ALL24</a></li>
+                      <li class="mb-3"><a class="text-secondary" href="">BOWL10</a></li>
+                      <li class="mb-3"><a class="text-secondary" href="">CUP8</a></li>
+                      <li class="mb-3"><a class="text-secondary" href="">PLATE3</a></li>
+                      <li class="mb-3"><a class="text-secondary" href="">VASE3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 rounded-0"><a class="btn btn-link btn-block text-left border-bottom text-dark h4 font-weight-bold collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Blog</a>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body p-3">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                </div>
+              </div>
+              <div class="card border-0 rounded-0"><a class="btn btn-link btn-block text-left border-bottom text-dark h4 font-weight-bold collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Contact</a>
+                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body p-3">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="home">
+      <section class="container banner mb-7 mb-md-8">
+        <div class="row flex-nowrap align-items-center">
+          <div class="col-12 col-md-6 banner-pos">
+            <div class="banner_body text-center text-md-left">
+              <h2 class="mb-5 text-dark font-weight-bold">享受極簡的</br>生活方式。</h2>
+              <p class="mb-7 text-secondary">台灣最好的家具品牌</br> 首次購物免運費。</p>
+            </div><a class="px-7 form-control btn-primary btn-md-inline d-md-inline text-center" href="../product/product.html">購買去</a>
+          </div>
+          <div class="col-12 banner_bg"></div>
+        </div>
+      </section>
+      <ul class="container section1">
+        <li class="row align-items-center mb-6">
+          <div class="col-md-6"> <img class="mb-3 mb-md-0 img-fluid" src="https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt=""/></div>
+          <div class="col-md-6">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <article>
+                  <h2 class="mb-3 h4 text-dark font-weight-bold"> 天然認證的木頭</h2>
+                  <p class="mb-5 text-info">100%經過認證的合法，可持續，負責任的木質家具，正因為純天然的且在木製家具的製程中不會釋放有害化學物質，最終也可經生物完全分解，不會對地球造成負擔。</p><a class="text-primary font-weight-bold" href="">更多</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="row align-items-center mb-6 flex-row-reverse">
+          <div class="col-md-6"> <img class="mb-3 mb-md-0 img-fluid" src="https://images.unsplash.com/photo-1566373924413-3efde9d6eb67?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt=""/></div>
+          <div class="col-md-6"> 
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <article>
+                  <h2 class="mb-3 h4 text-dark font-weight-bold"> 精湛工藝職人手作</h2>
+                  <p class="mb-5 text-info">家具向來以精湛手藝聞名四方。關鍵在於木頭在製成家具前會先經過一次機器磨砂，在製成後還會經過多一輪手工磨砂。正就是因為多層細膩的專業加工處理，才會擁有完美無瑕的磨砂表層。</p><a class="text-primary font-weight-bold" href="">更多</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="row align-items-center mb-7 mb-md-8">
+          <div class="col-md-6"> <img class="mb-3 mb-md-0 img-fluid" src="https://images.unsplash.com/photo-1550598052-a04a3ba16111?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt=""/></div>
+          <div class="col-md-6"> 
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <article>
+                  <h2 class="mb-3 h4 text-dark font-weight-bold"> 愛護環境永續經營</h2>
+                  <p class="mb-5 text-info">非法採伐破壞了許多天然森林，家具堅持只使用人造木頭製成家具，因為在人工林中每砍伐一棵就必須種植一棵新樹。除了確保木料供應的穩定，也兼顧愛護地球保護森林永續發展。</p><a class="text-primary font-weight-bold" href="">更多</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <section class="section2 mb-7 mb-md-8">
+        <div class="container h-100">
+          <div class="row flex-column flex-md-row justify-content-between align-content-center h-100 py-5 py-md-0">
+            <div class="col-md-4">
+              <h2 class="font-weight-bold text-white">“我希望讓生活的工藝更加簡單。”</h2>
+            </div>
+            <div class="col-md-3">
+              <div class="text">
+                <p class="mb-1 text-secondary">藝術指導</p>
+                <h4 class="mb-3 text-white">Tony Oki</h4>
+                <div class="d-flex"><a class="mr-5 text-primary font-weight-bold" href="">Instagram</a><a class="text-primary font-weight-bold" href="">Twitter</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="container">
+          <ul class="row list-unstyled px-0 mb-8 home_slick">
+            <li class="col-4">
+              <div class="card border-0"><img class="mb-2 card-img-top" src="https://images.unsplash.com/photo-1577306379609-dfba3ea2513d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+                <h4 class="mb-1 text-dark font-weight-bold card-title">高級原木書桌</h4>
+                <div class="card-text d-flex">
+                  <p class="mr-1">NT$1,080</p>
+                  <p class="text-info">
+                    <del>NT$1,200</del>
+                  </p>
+                </div>
+                <p class="saleMark text-white font-weight-bold">On Sale </p>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card border-0"><img class="mb-2 card-img-top" src="https://images.unsplash.com/photo-1476365518243-f738bf58443d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=633&amp;q=80" alt=""/>
+                <h4 class="mb-1 text-dark font-weight-bold card-title">小方桌</h4>
+                <div class="card-text d-flex">
+                  <p class="mr-1">NT$2,800</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card border-0"><img class="mb-2 card-img-top" src="https://images.unsplash.com/photo-1588084580191-db8604397b3d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/>
+                <h4 class="mb-1 text-dark font-weight-bold card-title">實木電腦桌</h4>
+                <div class="card-text d-flex">
+                  <p class="mr-1">NT$4,800</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card border-0"><img class="mb-2 card-img-top" src="https://images.unsplash.com/photo-1581839672503-4e762accfbdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+                <h4 class="mb-1 text-dark font-weight-bold card-title">實木辦公桌</h4>
+                <div class="card-text d-flex">
+                  <p class="mr-1">NT$1,080</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card border-0"><img class="mb-2 card-img-top" src="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+                <h4 class="mb-1 text-dark font-weight-bold card-title">實木桌</h4>
+                <div class="card-text d-flex">
+                  <p class="mr-1">NT$1,080</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-4">
+              <div class="card border-0"><img class="mb-2 card-img-top" src="https://images.unsplash.com/photo-1580480095047-4aa43ab3bd1d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+                <h4 class="mb-1 text-dark font-weight-bold card-title">電腦椅</h4>
+                <div class="card-text d-flex">
+                  <p class="mr-1">NT$1,080</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container-fluid footer_banner">
+        <div class="container h-100 px-0 px-md-3">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 col-md-5">
+              <h3 class="mb-5 mb-md-7 footer_text font-weight-bold text-white">訂閱最新消息及優惠!</h3>
+              <div class="row no-gutters">
+                <div class="col-8">
+                  <input class="form-control rounded-left bg-transparent border-right-0 text-white" type="text" placeholder="您的電子郵件"/>
+                </div>
+                <div class="col-4">
+                  <input class="form-control btn-primary rounded-right" type="button" value="訂閱"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-dark">
+        <div class="container px-0 px-md-3">
+          <nav class="navbar navbar-expand-lg px-0 flex-column flex-md-row align-items-start align-items-md-center">
+            <h4 class="order-0 navbar-brand footer_logo">Furniture</h4>
+            <p class="order-4 order-md-2 text-info mb-0">© 2020. All Rights Reserved.</p>
+            <ul class="order-3 mb-7 mb-md-0 navbar-nav ml-md-auto">
+              <li class="nav-item mr-7"><a class="nav-link" href="#">採購政策</a></li>
+              <li class="nav-item mr-7"><a class="nav-link" href="#">隱私政策</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">條款及細則</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../assets/javascripts/all.js"></script>
+  </body>
+</html>

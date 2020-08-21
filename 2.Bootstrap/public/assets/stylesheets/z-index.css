@@ -1,0 +1,8 @@
+body {
+  position: relative; }
+
+.header {
+  position: absolute;
+  z-index: 999; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFzc2V0cy9zdHlsZXNoZWV0cy96LWluZGV4LnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxrQkFBa0IsRUFBQTs7QUFFcEI7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWSxFQUFBIiwiZmlsZSI6ImFzc2V0cy9zdHlsZXNoZWV0cy96LWluZGV4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuYm9keSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTsgfVxuXG4uaGVhZGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiA5OTk7IH1cblxuIl19 */
