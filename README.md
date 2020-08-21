@@ -13,7 +13,7 @@
 <li>
     <strong>訂房電商網站</strong></br></br>
     純手刻RWD</br>
-    [https://yu-chang0524.github.io/Work-PSD-to-HTML/1.Resume/public/views/index.html]
+    [https://yu-chang0524.github.io/Work-PSD-to-HTML/3.Room/public/views/index/index.html]
 </li></br></br>
 </ol>
 
