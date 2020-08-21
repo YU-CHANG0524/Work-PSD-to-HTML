@@ -82,19 +82,19 @@ gulp.task('watch', function () {
 
 });
 
-//管理js 套件  先載到.tmp 
-gulp.task('bower', function() {
-    return gulp.src(mainBowerFiles())
-        .pipe(gulp.dest('./.tmp/vendors'))
-});
+// //管理js 套件  先載到.tmp 
+// gulp.task('bower', function() {
+//     return gulp.src(mainBowerFiles())
+//         .pipe(gulp.dest('./.tmp/vendors'))
+// });
 
-//.tmp 裡面的js 外掛載到 public
-gulp.task('vendorJs',function () {
-    return gulp.src('./.tmp/vendors/**/*.js')
-    .pipe($.concat('vendor.js'))
-    .pipe($.uglify())
-    .pipe(gulp.dest('./public/assets/javascripts/vendors/'))
-});
+// //.tmp 裡面的js 外掛載到 public
+// gulp.task('vendorJs',function () {
+//     return gulp.src('./.tmp/vendors/**/*.js')
+//     .pipe($.concat('vendor.js'))
+//     .pipe($.uglify())
+//     .pipe(gulp.dest('./public/assets/javascripts/vendors/'))
+// });
 
 
 //圖片壓縮
@@ -126,15 +126,11 @@ gulp.task('copyfonts',async function(){
 gulp.task('build'
     ,gulp.series(
         'clean',
-        'bower',
-        'vendorJs',
         gulp.parallel('pug','sass','babel','image-img-min','image-upload-min','copyfonts')
 ));
 
 gulp.task('default',
     gulp.series(
-        'bower',
-        'vendorJs',
         'image-img-min',
         'image-upload-min',
         'copyfonts',
