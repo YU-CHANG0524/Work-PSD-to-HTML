@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Raleway:ital,wght@0,400;0,700;1,800&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="g-container">
+        <h1 class="header_logo"><a href="../index/index.html" style="background: url(../../assets/images/logo.svg)">HOTEL</a></h1>
+        <nav><a class="u-hamburger" href="">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div></a>
+          <ul class="header_nav">
+            <li class="u-dropdown"><a class="u-dropdown_btn jq_language_btn" href="./blog.html"> <span class="material-icons">language</span><span class="u-arrow jq_header_arrow"></span></a>
+              <ul class="u-dropdown_select jq_language_select">
+                <li><a href="">繁體中文</a></li>
+                <li><a href="">简体中文</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </li>
+            <li class="u-dropdown user-control"><a class="u-dropdown_btn" href="#"> 
+                <div class="user-icon"><img src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/></div>
+                <p>David Lin</p><span class="u-arrow"></span></a></li>
+            <li class="header_sign"><a href="./sign.html">註冊</a></li>
+            <li class="header_login"><a href="../login/login.html">登入</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="home">
+      <section class="u-banner_slick">
+        <div class="slick_arrows"><span class="material-icons jq_banner_slick_arrow-pre">keyboard_arrow_left</span><span class="material-icons jq_banner_slick_arrow-next">keyboard_arrow_right</span></div>
+        <ul class="jq_home_banner_slick">
+          <li class="u-banner_slick_item">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" media="(max-width: 768px)"/><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="My default image"/><!--[if IE 9]></video><![endif]-->
+            </picture>
+            <article class="banner_body">
+              <h2 class="banner_title">超越期望的非凡體驗</h2>
+            </article>
+          </li>
+          <li class="u-banner_slick_item">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" media="(max-width: 768px)"/><img src="https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80" alt="My default image"/><!--[if IE 9]></video><![endif]-->
+            </picture>
+            <article class="banner_body">
+              <h2 class="banner_title">發現您理想的酒店</h2>
+            </article>
+          </li>
+          <li class="u-banner_slick_item">
+            <picture><!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="https://images.unsplash.com/photo-1534600913328-441f6abb4e2f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2134&amp;q=80" media="(max-width: 768px)"/><img src="https://images.unsplash.com/photo-1534600913328-441f6abb4e2f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2134&amp;q=80" alt="My default image"/><!--[if IE 9]></video><![endif]-->
+            </picture>
+            <article class="banner_body">
+              <h2 class="banner_title">洲際人生，知行天下</h2>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="search m-search_bar">
+        <div class="search-wrap m-search_bar-wrap">
+          <form class="form-style" action="" method="post">
+            <div class="form-group">
+              <label class="m-search_bar-local"><span class="material-icons form-group-icon">place</span>
+                <input class="jq_local-input" type="text" id="id_location"/>
+                <label class="fake-placeholder jq_fake-placeholder" for="id_location">地點</label>
+                <p class="input-result jq_input-result"></p>
+              </label>
+              <ul class="form-group_list hot-local-list jq_hot-local-list"> 
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">曼谷</p><span class="jq_country">泰國</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">大阪</p><span class="jq_country">日本</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">羅馬</p><span class="jq_country">義大利</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">巴黎</p><span class="jq_country">倫敦</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">雷克雅維克</p><span class="jq_country">冰島</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <label class="m-search_bar-date"><span class="material-icons form-group-icon">date_range</span>
+                <input class="jq_local-date jq_date" type="text" id="id_date" readonly="readonly"/>
+                <label class="fake-placeholder jq_fake-placeholder_2" for="id_date">入住 / 退房</label>
+                <div class="block jq_block">
+                  <div class="check-in">
+                    <p class="range">Check-in</p>
+                    <p class="date"> 17 June</p>
+                  </div>
+                  <div class="check-out">
+                    <p class="range">Check-out</p>
+                    <p class="date"> 19 June</p>
+                  </div>
+                </div>
+                <p class="input-result jq_input-date"></p>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="m-search_bar-guest"><span class="material-icons form-group-icon">person</span>
+                <input class="jq_local-guest" type="text" id="id_guest" readonly="readonly"/>
+                <label class="fake-placeholder jq_fake-placeholder_1" for="id_guest">人數</label>
+                <p class="input-result jq_input-guest"></p>
+              </label>
+              <ul class="form-group_list guest-item jq_guest-item">
+                <li>
+                  <p class="attribute">成人 </p>
+                  <div class="btn-group"><a class="material-icons" href="">remove</a><span>2</span><a class="material-icons" href="">add</a></div>
+                </li>
+                <li>
+                  <p class="attribute">孩童</p>
+                  <div class="btn-group"><a class="material-icons" href="">remove</a><span>0</span><a class="material-icons" href="">add</a></div>
+                </li>
+                <li>
+                  <p class="attribute">房間</p>
+                  <div class="btn-group"><a class="material-icons" href="">remove</a><span>1</span><a class="material-icons" href="">add</a></div>
+                </li>
+              </ul>
+            </div><a class="submit-style" href="../result/result.html">搜尋</a>
+          </form>
+        </div>
+      </section>
+      <section class="choices">
+        <div class="g-container g-section-space">
+          <h2 class="u-title">熱門選擇</h2>
+          <article class="choices_tab">
+            <ul class="choices_tab_nav">
+              <li class="u-sub active">
+                <p class="u-sub_title">巴里島</p><span class="u-sub_mark">128</span>
+              </li>
+              <li class="u-sub">
+                <p class="u-sub_title">沖繩</p><span class="u-sub_mark">67</span>
+              </li>
+              <li class="u-sub"> 
+                <p class="u-sub_title">台北</p><span class="u-sub_mark">53</span>
+              </li>
+            </ul>
+            <div class="choices_tab_content">
+              <div class="choices_pane">
+                <div class="slick-arrow jq_home_choices_slick-arrow"><span class="material-icons">keyboard_arrow_right</span></div>
+                <ul class="u-tab_content_pane jq_home_choices_slick">
+                  <li class="u-card">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1569335468888-1d3e4a5a3595?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt="" srcset=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">水上酒店</h3>
+                      <div class="evaluate">
+                        <div class="star"><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span></div>
+                        <p class="star_num">5.0</p>
+                        <p class="sum">2k 評論</p>
+                      </div>
+                      <div class="price">
+                        <p class="original">TWD 2,480</p>
+                        <del class="discount">TWD 3,980</del>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="u-card">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1564631028227-cd9886207fc3?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1225&amp;q=80" alt="" srcset=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">川崎先生旅館</h3>
+                      <div class="evaluate">
+                        <div class="star"><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span></div>
+                        <p class="star_num">4.0</p>
+                        <p class="sum">500 評論</p>
+                      </div>
+                      <div class="price">
+                        <p class="original">TWD 3,380</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="u-card">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1506126279646-a697353d3166?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="" srcset=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">美洲天堂</h3>
+                      <div class="evaluate">
+                        <div class="star"><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span></div>
+                        <p class="star_num">4.0</p>
+                        <p class="sum">470 評論</p>
+                      </div>
+                      <div class="price">
+                        <p class="original">TWD 4,780</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="u-card">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1206&amp;q=80" alt="" srcset=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">野獸酒店</h3>
+                      <div class="evaluate">
+                        <div class="star"><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span></div>
+                        <p class="star_num">4.0</p>
+                        <p class="sum">283 評論</p>
+                      </div>
+                      <div class="price">
+                        <p class="original">TWD 1,980</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="u-card">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1506126279646-a697353d3166?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="" srcset=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">美洲天堂</h3>
+                      <div class="evaluate">
+                        <div class="star"><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span><span class="material-icons">grade</span></div>
+                        <p class="star_num">4.0</p>
+                        <p class="sum">470 評論</p>
+                      </div>
+                      <div class="price">
+                        <p class="original">TWD 4,780</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="Destinations">
+        <div class="g-container g-section-space">
+          <h2 class="u-title">熱門地點</h2>
+          <ul class="u-list Destinations_list">
+            <li class="u-card">
+              <div class="mask"></div>
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1537153960513-344d9f2e8216?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/>
+                <div class="u-card_body">
+                  <div class="left">
+                    <div class="u-card_title">日本</div>
+                    <div class="u-card_subtitle">大阪</div>
+                  </div>
+                  <div class="right"><span class="arrow material-icons">keyboard_arrow_down</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="mask"></div>
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1558862107-d49ef2a04d72?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/>
+                <div class="u-card_body">
+                  <div class="left">
+                    <div class="u-card_title">日本</div>
+                    <div class="u-card_subtitle">東京</div>
+                  </div>
+                  <div class="right"><span class="arrow material-icons">keyboard_arrow_down</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="mask"></div>
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/>
+                <div class="u-card_body">
+                  <div class="left">
+                    <div class="u-card_title">冰島</div>
+                    <div class="u-card_subtitle">雷克雅維克</div>
+                  </div>
+                  <div class="right"><span class="arrow material-icons">keyboard_arrow_down</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="mask"></div>
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1449265614232-03dfc33163a0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/>
+                <div class="u-card_body">
+                  <div class="left">
+                    <div class="u-card_title">倫敦</div>
+                    <div class="u-card_subtitle">巴黎</div>
+                  </div>
+                  <div class="right"><span class="arrow material-icons">keyboard_arrow_down</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="mask"></div>
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1529154036614-a60975f5c760?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1055&amp;q=80" alt=""/>
+                <div class="u-card_body">
+                  <div class="left">
+                    <div class="u-card_title">義大利</div>
+                    <div class="u-card_subtitle">羅馬</div>
+                  </div>
+                  <div class="right"><span class="arrow material-icons">keyboard_arrow_down</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="mask"></div>
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=701&amp;q=80" alt=""/>
+                <div class="u-card_body">
+                  <div class="left">
+                    <div class="u-card_title">泰國</div>
+                    <div class="u-card_subtitle">曼谷</div>
+                  </div>
+                  <div class="right"><span class="arrow material-icons">keyboard_arrow_down</span></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="Inspiration">
+        <div class="g-container g-section-space">
+          <div class="Inspiration_title">
+            <h2 class="u-title">隨機推薦</h2>
+            <input class="btn" type="button" value="查看更多"/>
+          </div>
+          <ul class="u-list Inspiration_list jq_inspiration_list">
+            <li class="u-card">
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/></div>
+              <div class="u-card_body">
+                <h3 class="u-card_title">第五訪問最多的國家</h3>
+                <p class="u-card_text">意大利是世界上訪問量排名第五的國家，總計5230萬……</p>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1558225818-388ab5bcd45d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/></div>
+              <div class="u-card_body">
+                <h3 class="u-card_title">前往泰國必去曼谷</h3>
+                <p class="u-card_text">亞洲遊客主要訪問泰國去曼谷和歷史悠久的自然風光……</p>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80" alt=""/></div>
+              <div class="u-card_body">
+                <h3 class="u-card_title">指環王之旅</h3>
+                <p class="u-card_text">民族美食被描述為環太平洋地區，融合了當地的毛利人…</p>
+              </div>
+            </li>
+            <li class="u-card">
+              <div class="u-card_img"><img src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80" alt=""/></div>
+              <div class="u-card_body">
+                <h3 class="u-card_title">指環王之旅</h3>
+                <p class="u-card_text">民族美食被描述為環太平洋地區，融合了當地的毛利人…</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="m-subscribe">
+        <div class="m-subscribe-wrap">
+          <h2 class="u-title">訂閱獨家優惠</h2>
+          <div class="form-group">
+            <input type="text" placeholder="您的電子信箱"/>
+            <input class="submit-style" type="submit" value="訂閱"/>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="g-container">
+        <li class="footer_msg">
+          <p>© 2020 ALOHA, Inc. All rights reserved.</p>
+          <div class="box"><a href="#">常見問題</a><a href="#">使用條款</a><a href="#">隱私政策</a></div>
+        </li>
+        <li class="footer_dropdown">
+          <div class="u-dropdown footer_dropdown-language"><a class="u-dropdown_btn jq_footer_language_btn" href="#"> <span class="material-icons">language</span><span class="text">繁體中文</span><span class="u-arrow jq_footer_language_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_language_select">
+              <li><a href="">繁體中文</a></li>
+              <li><a href="">简体中文</a></li>
+              <li><a href="">English</a></li>
+            </ul>
+          </div>
+          <div class="u-dropdown footer_dropdown-dollar"><a class="u-dropdown_btn jq_footer_dollar_btn" href="#"> <span class="material-icons">attach_money</span><span class="text">TWD</span><span class="u-arrow jq_footer_dollar_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_dollar_select">
+              <li><a href="">TWD</a></li>
+              <li><a href="">HKD</a></li>
+              <li><a href="">USD</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../assets/javascripts/vendors/vendor.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="../../assets/javascripts/all.js"></script>
+  </body>
+</html>

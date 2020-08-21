@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Raleway:ital,wght@0,400;0,700;1,800&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="g-container">
+        <h1 class="header_logo"><a href="../index/index.html" style="background: url(../../assets/images/logo.svg)">HOTEL</a></h1>
+        <nav><a class="u-hamburger" href="">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div></a>
+          <ul class="header_nav">
+            <li class="u-dropdown"><a class="u-dropdown_btn jq_language_btn" href="./blog.html"> <span class="material-icons">language</span><span class="u-arrow jq_header_arrow"></span></a>
+              <ul class="u-dropdown_select jq_language_select">
+                <li><a href="">繁體中文</a></li>
+                <li><a href="">简体中文</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </li>
+            <li class="u-dropdown user-control"><a class="u-dropdown_btn" href="#"> 
+                <div class="user-icon"><img src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/></div>
+                <p>David Lin</p><span class="u-arrow"></span></a></li>
+            <li class="header_sign"><a href="./sign.html">註冊</a></li>
+            <li class="header_login"><a href="../login/login.html">登入</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="member">
+      <section class="g-container">
+        <div class="member_wrap">
+          <div class="col-8">
+            <div class="member_order">
+              <h3 class="u-title">My Bookings</h3>
+              <ul class="member_order_nav">
+                <li class="active"><a href="">Upcoming</a></li>
+                <li><a href="">Completed</a></li>
+              </ul>
+              <ul class="member_order_list">
+                <li class="u-card">
+                  <div class="u-card_img"><img src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt=""/></div>
+                  <div class="u-card_body">
+                    <div class="u-card_item"><span class="material-icons">hotel</span>
+                      <div class="text">
+                        <p class="text-1">Rachada Hotel</p>
+                        <p class="text-2">Deluxe Suite with Pool</p>
+                      </div>
+                    </div>
+                    <div class="u-card_item"><span class="material-icons">date_range</span>
+                      <div class="text">
+                        <p class="text-1">17 June 2020 - 19 June 2020</p>
+                        <p class="text-2">2 nights・2 adults</p>
+                      </div>
+                    </div>
+                    <div class="u-card_item"><span class="material-icons">attach_money</span>
+                      <div class="text">
+                        <p class="text-1">TWD 4,633</p>
+                        <p class="text-2">includes taxes and charges</p>
+                      </div>
+                    </div>
+                  </div><a class="view-btn" href="">view details</a>
+                </li>
+                <li class="u-card">
+                  <div class="u-card_img"><img src="https://images.unsplash.com/photo-1584931999791-83ae17b2a4d8?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/></div>
+                  <div class="u-card_body">
+                    <div class="u-card_item"><span class="material-icons">hotel</span>
+                      <div class="text">
+                        <p class="text-1">WOW Life Hotel</p>
+                        <p class="text-2">Standard Double Room</p>
+                      </div>
+                    </div>
+                    <div class="u-card_item"><span class="material-icons">date_range</span>
+                      <div class="text">
+                        <p class="text-1">8 Sep 2020 - 15 Sep 2020</p>
+                        <p class="text-2">7 nights・2 adults</p>
+                      </div>
+                    </div>
+                    <div class="u-card_item"><span class="material-icons">attach_money</span>
+                      <div class="text">
+                        <p class="text-1">TWD 13,084</p>
+                        <p class="text-2">includes taxes and charges</p>
+                      </div>
+                    </div>
+                  </div><a class="view-btn" href="">view details</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="member_detail">
+              <div class="member_detail_title">
+                <h3 class="u-title">Profile</h3>
+                <div class="badges"><span class="material-icons">done</span>
+                  <p>VERIFIED</p>
+                </div><a class="edit-btn" href="">EDIT</a>
+              </div>
+              <div class="member_detail_content">
+                <div class="text user">
+                  <h3 class="text-1 mb-24">User details</h3>
+                  <p class="text-2 mb-16">David Lin</p>
+                  <p class="text-2 mb-16">david0520@mail.com.tw</p>
+                  <p class="text-2 mb-24">+886 9 32 456 789</p>
+                </div>
+                <div class="text">
+                  <h3 class="text-1 mb-24">Payment methods</h3>
+                  <div class="credit">
+                    <div class="block">
+                      <p class="text-2">xxxx-xxxx-7890</p>
+                      <p class="text-2">DAVID LIN</p>
+                      <p class="text-2">08/2029</p><span class="fab fa-cc-visa"></span>
+                    </div>
+                    <div class="block add"><a class="material-icons" href="">add</a></div>
+                  </div>
+                </div><img class="user-img" src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="g-container">
+        <li class="footer_msg">
+          <p>© 2020 ALOHA, Inc. All rights reserved.</p>
+          <div class="box"><a href="#">常見問題</a><a href="#">使用條款</a><a href="#">隱私政策</a></div>
+        </li>
+        <li class="footer_dropdown">
+          <div class="u-dropdown footer_dropdown-language"><a class="u-dropdown_btn jq_footer_language_btn" href="#"> <span class="material-icons">language</span><span class="text">繁體中文</span><span class="u-arrow jq_footer_language_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_language_select">
+              <li><a href="">繁體中文</a></li>
+              <li><a href="">简体中文</a></li>
+              <li><a href="">English</a></li>
+            </ul>
+          </div>
+          <div class="u-dropdown footer_dropdown-dollar"><a class="u-dropdown_btn jq_footer_dollar_btn" href="#"> <span class="material-icons">attach_money</span><span class="text">TWD</span><span class="u-arrow jq_footer_dollar_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_dollar_select">
+              <li><a href="">TWD</a></li>
+              <li><a href="">HKD</a></li>
+              <li><a href="">USD</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../assets/javascripts/vendors/vendor.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="../../assets/javascripts/all.js"></script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Raleway:ital,wght@0,400;0,700;1,800&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="g-container">
+        <h1 class="header_logo"><a href="../index/index.html" style="background: url(../../assets/images/logo.svg)">HOTEL</a></h1>
+        <nav><a class="u-hamburger" href="">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div></a>
+          <ul class="header_nav">
+            <li class="u-dropdown"><a class="u-dropdown_btn jq_language_btn" href="./blog.html"> <span class="material-icons">language</span><span class="u-arrow jq_header_arrow"></span></a>
+              <ul class="u-dropdown_select jq_language_select">
+                <li><a href="">繁體中文</a></li>
+                <li><a href="">简体中文</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </li>
+            <li class="u-dropdown user-control"><a class="u-dropdown_btn" href="#"> 
+                <div class="user-icon"><img src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/></div>
+                <p>David Lin</p><span class="u-arrow"></span></a></li>
+            <li class="header_sign"><a href="./sign.html">註冊</a></li>
+            <li class="header_login"><a href="../login/login.html">登入</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="detail">
+      <section class="search m-search_bar m-search_bar-style">
+        <div class="search_bar-rwd"><span class="material-icons">arrow_back</span>
+          <p>Bangkok・17 June - 19 June・2 adults・1 room</p>
+        </div>
+        <div class="search-wrap m-search_bar-wrap">
+          <form class="form-style" action="" method="post">
+            <div class="form-group">
+              <label class="m-search_bar-local"><span class="material-icons form-group-icon">place</span>
+                <input class="jq_local-input" type="text" id="id_location"/>
+                <label class="fake-placeholder jq_fake-placeholder" for="id_location">Destination</label>
+                <p class="input-result jq_input-result"></p>
+              </label>
+              <ul class="form-group_list hot-local-list jq_hot-local-list"> 
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">Bangkok</p><span class="jq_country">Thailand</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">Osaka</p><span class="jq_country">Japan</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">Roma</p><span class="jq_country">Italy</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">Paris</p><span class="jq_country">London</span>
+                  </div>
+                </li>
+                <li class="jq_local_list_item"><span class="material-icons">star_rate</span>
+                  <div class="value">
+                    <p class="jq_town">Reykjavik</p><span class="jq_country">Iceland</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <label class="m-search_bar-date"><span class="material-icons form-group-icon">date_range</span>
+                <input class="jq_local-date jq_date" type="text" id="id_date" readonly="readonly"/>
+                <label class="fake-placeholder jq_fake-placeholder_2" for="id_date">Check-in / out</label>
+                <div class="block jq_block">
+                  <div class="check-in">
+                    <p class="rwd-title">Check-in / out</p>
+                    <p class="range">Check-in</p>
+                    <p class="date"> 17 June</p>
+                  </div>
+                  <div class="check-out">
+                    <p class="range">Check-out</p>
+                    <p class="date"> 19 June</p>
+                  </div>
+                </div>
+                <p class="input-result jq_input-date"></p>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="m-search_bar-guest"><span class="material-icons form-group-icon">person</span>
+                <input class="jq_local-guest" type="text" id="id_guest" readonly="readonly"/>
+                <label class="fake-placeholder jq_fake-placeholder_1" for="id_guest">Guests</label>
+                <p class="input-result jq_input-guest"></p>
+              </label>
+              <ul class="form-group_list guest-item jq_guest-item">
+                <li>
+                  <p class="attribute">Adult </p>
+                  <div class="btn-group"><a class="material-icons" href="">remove</a><span>2</span><a class="material-icons" href="">add</a></div>
+                </li>
+                <li>
+                  <p class="attribute">Child</p>
+                  <div class="btn-group"><a class="material-icons" href="">remove</a><span>0</span><a class="material-icons" href="">add</a></div>
+                </li>
+                <li>
+                  <p class="attribute">Room</p>
+                  <div class="btn-group"><a class="material-icons" href="">remove</a><span>1</span><a class="material-icons" href="">add</a></div>
+                </li>
+              </ul>
+            </div><a class="submit-style" href="../result/result.html">SEARCH</a>
+          </form>
+        </div>
+      </section>
+      <section class="g-container rwd-set">
+        <div class="detail-wrap">
+          <article class="detail_content g-section-space"><a class="material-icons jq_detail_content_slick-pre" href="">keyboard_arrow_left</a><a class="material-icons jq_detail_content_slick-next" href="">keyboard_arrow_right</a>
+            <ul class="detail_content_slick jq_detail_content_slick">
+              <li><img src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt=""/></li>
+              <li><img src="https://images.unsplash.com/photo-1560920174-92abf3b69a7c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/></li>
+              <li><img src="https://images.unsplash.com/photo-1560920452-dcdcbbb4e117?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=633&amp;q=80" alt=""/></li>
+              <li><img src="https://images.unsplash.com/photo-1560920452-da0369e98fe7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/></li>
+            </ul>
+            <div class="detail_content_img">
+              <div class="col-7"><img src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt=""/></div>
+              <div class="col-5">
+                <div class="top"><img src="https://images.unsplash.com/photo-1560920174-92abf3b69a7c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/></div>
+                <div class="bottom">
+                  <div class="left"><img src="https://images.unsplash.com/photo-1560920452-dcdcbbb4e117?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=633&amp;q=80" alt=""/></div>
+                  <div class="right"><img src="https://images.unsplash.com/photo-1560920452-da0369e98fe7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt=""/><a href="#">SEE ALL 10 PHOTOS</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="detail_content_body">
+              <div class="detail_content_title">
+                <h2 class="u-title">Rachada Hotel</h2>
+                <div class="star-block">
+                  <div class="star-group"> <span class="material-icons">star_rate</span><span class="material-icons">star_rate</span><span class="material-icons">star_rate</span><span class="material-icons">star_rate</span></div><span class="star-sum">4.0 (283)</span>
+                </div>
+              </div>
+              <h3 class="subtitle">318 Phaya Thai Road, Ratchathewi, Phaya Thai, 10400 Bangkok, Thailand</h3>
+              <p class="detail_content_text">
+                The Rachada Hotel is an establishment that provides paid lodgi
+                ng on a short-term basis. Facilities provided may range from a m
+                odest-quality mattress in a small room to large suites with bigger,
+                higher-quality beds, a dresser, a refrigerator and other kitchen fa
+                cilities, upholstered chairs, a flat screen television, and en-suite bathrooms.
+              </p>
+            </div>
+          </article>
+          <section class="detail_select g-section-space">
+            <h3 class="u-title">Select your room</h3>
+            <div class="detail_select_options">
+              <ul>
+                <li>Bangkok, Thailand</li>
+                <li>17 June - 19 June・2 nights</li>
+                <li>2 adults・1 room</li>
+              </ul><a class="edit" href="#">EDIT DETAIL</a>
+            </div>
+            <div class="detail_select_table u-table">
+              <ul class="u-table_head">
+                <li class="col-6">Room Type</li>
+                <li class="col-2">Sleeps</li>
+                <li class="col-2">Price</li>
+                <li class="col-2">Rooms</li>
+              </ul>
+              <ul class="u-table_body">
+                <li class="u-card">
+                  <div class="col-6">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1574643014728-053f16745e49?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">Deluxe Double Room A</h3>
+                      <h4 class="u-card_subtitle">1 bed (Queen size)</h4>
+                      <ul class="service">
+                        <li><span class="material-icons">wifi</span>
+                          <p>Wi-Fi</p>
+                        </li>
+                        <li><span class="material-icons">restaurant</span>
+                          <p>breakfast</p>
+                        </li>
+                        <li><span class="material-icons">tv</span>
+                          <p>television</p>
+                        </li>
+                        <li><span class="material-icons">ac_unit</span>
+                          <p>air conditioner</p>
+                        </li>
+                        <li><span class="material-icons">room_service</span>
+                          <p>room service</p>
+                        </li>
+                        <li><span class="material-icons">smoke_free</span>
+                          <p>smoke free</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="sleeps"><span class="material-icons">person</span><span class="material-icons">person</span></div>
+                  </div>
+                  <div class="col-2">
+                    <div class="price-block">
+                      <del>TWD 1,980</del>
+                      <p class="price active">TWD 1,490</p><span class="night">per night</span>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="rooms"><a class="jq_overlay-show material-icons" href="#">remove</a><span class="rooms-count">0</span><a class="jq_overlay-show material-icons" href="#">add</a></div>
+                  </div>
+                </li>
+                <li class="u-card">
+                  <div class="col-6">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1583845112203-29329902332e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1234&amp;q=80" alt=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">Deluxe Double Room B</h3>
+                      <h4 class="u-card_subtitle">1 bed (Queen size)</h4>
+                      <ul class="service">
+                        <li><span class="material-icons">wifi</span>
+                          <p>Wi-Fi</p>
+                        </li>
+                        <li><span class="material-icons">restaurant</span>
+                          <p>breakfast</p>
+                        </li>
+                        <li><span class="material-icons">tv</span>
+                          <p>television</p>
+                        </li>
+                        <li><span class="material-icons">ac_unit</span>
+                          <p>air conditioner</p>
+                        </li>
+                        <li><span class="material-icons">room_service</span>
+                          <p>room service</p>
+                        </li>
+                        <li><span class="material-icons">smoke_free</span>
+                          <p>smoke free</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="sleeps"><span class="material-icons">person</span><span class="material-icons">person</span></div>
+                  </div>
+                  <div class="col-2">
+                    <div class="price-block">
+                      <p class="price">TWD 1,600</p><span class="night">per night</span>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="rooms"><a class="jq_overlay-show material-icons" href="#">remove</a><span class="rooms-count">0</span><a class="jq_overlay-show material-icons" href="#">add</a></div>
+                  </div>
+                </li>
+                <li class="u-card">
+                  <div class="col-6">
+                    <div class="u-card_img"><img src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt=""/></div>
+                    <div class="u-card_body">
+                      <h3 class="u-card_title">Deluxe Suite with Pool</h3>
+                      <h4 class="u-card_subtitle">1 bed (Queen size)</h4>
+                      <ul class="service">
+                        <li><span class="material-icons">wifi</span>
+                          <p>Wi-Fi</p>
+                        </li>
+                        <li><span class="material-icons">restaurant</span>
+                          <p>breakfast</p>
+                        </li>
+                        <li><span class="material-icons">tv</span>
+                          <p>television</p>
+                        </li>
+                        <li><span class="material-icons">ac_unit</span>
+                          <p>air conditioner</p>
+                        </li>
+                        <li><span class="material-icons">kitchen</span>
+                          <p>refrigerator</p>
+                        </li>
+                        <li><span class="material-icons">room_service</span>
+                          <p>room service</p>
+                        </li>
+                        <li><span class="material-icons">local_bar</span>
+                          <p>mini bar</p>
+                        </li>
+                        <li><span class="material-icons">smoke_free</span>
+                          <p>smoke free</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="sleeps"><span class="material-icons">person</span><span class="material-icons">person</span></div>
+                  </div>
+                  <div class="col-2">
+                    <div class="price-block">
+                      <p class="price">TWD 1,980</p><span class="night">per night</span>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="rooms"><a class="jq_overlay-show material-icons" href="#">remove</a><span class="rooms-count">1</span><a class="jq_overlay-show material-icons" href="#">add</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="m-subscribe m-subscribe-style">
+        <div class="m-subscribe-wrap">
+          <h2 class="u-title">Subscribe for Exclusive Offer</h2>
+          <div class="form-group">
+            <input type="text" placeholder="Your email address"/>
+            <input class="submit-style" type="submit" value="SUBSCRIBE"/>
+          </div>
+        </div>
+      </section>
+      <section class="detail_overlay">
+        <div class="g-container">
+          <div class="total">
+            <p class="type">1 room・2 night</p>
+            <p class="price">TWD 3,960</p>
+          </div>
+          <div class="btn-group"><a class="jq_overlay-cancel cancel-btn" href="#">Cancel</a><a class="reserve-btn" href="../detail/reservation.html">Reserve</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="g-container">
+        <li class="footer_msg">
+          <p>© 2020 ALOHA, Inc. All rights reserved.</p>
+          <div class="box"><a href="#">常見問題</a><a href="#">使用條款</a><a href="#">隱私政策</a></div>
+        </li>
+        <li class="footer_dropdown">
+          <div class="u-dropdown footer_dropdown-language"><a class="u-dropdown_btn jq_footer_language_btn" href="#"> <span class="material-icons">language</span><span class="text">繁體中文</span><span class="u-arrow jq_footer_language_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_language_select">
+              <li><a href="">繁體中文</a></li>
+              <li><a href="">简体中文</a></li>
+              <li><a href="">English</a></li>
+            </ul>
+          </div>
+          <div class="u-dropdown footer_dropdown-dollar"><a class="u-dropdown_btn jq_footer_dollar_btn" href="#"> <span class="material-icons">attach_money</span><span class="text">TWD</span><span class="u-arrow jq_footer_dollar_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_dollar_select">
+              <li><a href="">TWD</a></li>
+              <li><a href="">HKD</a></li>
+              <li><a href="">USD</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../assets/javascripts/vendors/vendor.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="../../assets/javascripts/all.js"></script>
+  </body>
+</html>

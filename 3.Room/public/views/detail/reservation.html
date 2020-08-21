@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;family=Raleway:ital,wght@0,400;0,700;1,800&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="g-container">
+        <h1 class="header_logo"><a href="../index/index.html" style="background: url(../../assets/images/logo.svg)">HOTEL</a></h1>
+        <nav><a class="u-hamburger" href="">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div></a>
+          <ul class="header_nav">
+            <li class="u-dropdown"><a class="u-dropdown_btn jq_language_btn" href="./blog.html"> <span class="material-icons">language</span><span class="u-arrow jq_header_arrow"></span></a>
+              <ul class="u-dropdown_select jq_language_select">
+                <li><a href="">繁體中文</a></li>
+                <li><a href="">简体中文</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </li>
+            <li class="u-dropdown user-control"><a class="u-dropdown_btn" href="#"> 
+                <div class="user-icon"><img src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""/></div>
+                <p>David Lin</p><span class="u-arrow"></span></a></li>
+            <li class="header_sign"><a href="./sign.html">註冊</a></li>
+            <li class="header_login"><a href="../login/login.html">登入</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="reserve g-container">
+      <div class="reserve-wrap">
+        <div class="col-6 pr15">
+          <h2 class="u-title">Reservation details</h2>
+          <form class="reserve_form" action="">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email"/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="text" id="phone"/>
+            </div>
+            <div class="form-group"><a class="btn" href="./receive.html">Reserve</a><a class="tips" href="#">Reserve now, pay at stay</a></div>
+          </form>
+        </div>
+        <div class="col-6 pl15">
+          <div class="reserve_check-rwd">
+            <div class="total"><span>Total</span>
+              <p>TWD 4,633</p>
+            </div><a class="total-btn jq_total-btn" href="">
+              <p>Detail</p><span class="material-icons">keyboard_arrow_down</span></a>
+          </div>
+          <div class="reserve_check">
+            <div class="block">
+              <h3 class="subtitle">Booking details</h3>
+              <p class="mb-8">17 June 2020 - 19 June 2020・2 nights</p>
+              <p class="mb-8">2 adults・1 room</p>
+              <p class="mb-8">Rachada Hotel</p>
+            </div>
+            <div class="block">
+              <h3 class="subtitle">Price summary</h3>
+              <div class="flex">
+                <p class="mb-8">Deluxe Suite with Pool</p>
+                <p class="mb-8">TWD 3,960</p>
+              </div>
+              <div class="flex">
+                <p class="mb-8">VAT (7%)</p>
+                <p class="mb-8">TWD 277</p>
+              </div>
+              <div class="flex">
+                <p class="mb-8">Property service charge</p>
+                <p class="mb-8">TWD 396</p>
+              </div>
+            </div>
+            <div class="flex fz-16">
+              <p>Total</p>
+              <p class="total-number">TWD 4,633</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="g-container">
+        <li class="footer_msg">
+          <p>© 2020 ALOHA, Inc. All rights reserved.</p>
+          <div class="box"><a href="#">常見問題</a><a href="#">使用條款</a><a href="#">隱私政策</a></div>
+        </li>
+        <li class="footer_dropdown">
+          <div class="u-dropdown footer_dropdown-language"><a class="u-dropdown_btn jq_footer_language_btn" href="#"> <span class="material-icons">language</span><span class="text">繁體中文</span><span class="u-arrow jq_footer_language_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_language_select">
+              <li><a href="">繁體中文</a></li>
+              <li><a href="">简体中文</a></li>
+              <li><a href="">English</a></li>
+            </ul>
+          </div>
+          <div class="u-dropdown footer_dropdown-dollar"><a class="u-dropdown_btn jq_footer_dollar_btn" href="#"> <span class="material-icons">attach_money</span><span class="text">TWD</span><span class="u-arrow jq_footer_dollar_arrow"></span></a>
+            <ul class="u-dropdown_select jq_footer_dollar_select">
+              <li><a href="">TWD</a></li>
+              <li><a href="">HKD</a></li>
+              <li><a href="">USD</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../assets/javascripts/vendors/vendor.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="../../assets/javascripts/all.js"></script>
+  </body>
+</html>
