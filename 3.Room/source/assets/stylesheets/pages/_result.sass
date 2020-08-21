@@ -1,0 +1,497 @@
+
+.result
+  margin-top: 10.875rem
+  +pad
+    margin-top: 9.875rem
+  +phone
+    margin-top: 56px
+  .g-container
+    +phone
+      max-width: initial
+  .m-search_bar-wrap
+    +phone
+      display: none
+
+  //rwd search bar
+  .search_bar-rwd
+    display: none
+    background: $primary-light
+    li
+      width: 33.3333%
+      font-size: $xs
+      padding: 1rem 0
+      text-align: center
+      color: $secondary
+      position: relative
+
+      &:nth-last-child(1)
+        &::after
+          display: none
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        top: 0.5rem
+        width: 1px
+        height: 36px
+        background: $w
+    +phone
+      display: flex
+
+  &-wrap
+    padding-top: $l
+    margin-left: -15px
+    margin-right: -15px
+    display: flex
+    +phone
+      margin-left: 0
+      margin-right: 0
+      padding-top: 66px
+      position: relative
+  &_side
+    width: 33.3333%
+    padding-left: 15px
+    padding-right: 15px
+    +phone
+      width: 100%
+      position: fixed
+      display: none
+      z-index: 10
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background: $w
+      padding-left: 0
+      padding-right: 0
+    .u-sub
+      +phone
+        display: none
+        
+    &-rwd
+      display: none
+      +phone
+        +flex(space-between)
+        padding: 0 15px
+        position: fixed
+        width: 100%
+        background: $w
+        z-index: 5
+      a
+        +flex
+      .bar
+        padding: 1rem 0
+        p
+          font-weight: 700
+          font-size: $s
+          margin-left: 0.5rem
+    
+    &-rwd-overlay 
+      position: fixed
+      bottom: 0
+      border-radius: 8px 8px 0px 0px
+      padding: $l 15px
+      background: rgba(0,0,0,0.9)
+      z-index: 5
+      width: 100%
+      display: none
+      +phone
+        display: block
+      h6
+        font-size: $l
+        font-weight: 700
+        font-family: 'Raleway'
+        margin-bottom: 1rem
+        color: $w
+      .btn-group
+        display: flex
+        a
+          width: 100%
+          text-align: center
+          text-transform: uppercase
+          padding: 1rem
+          border: 1px solid $w
+          color: $w
+          border-radius: 4px
+          &:nth-child(1)
+            margin-right: 8px
+          &:nth-child(2)
+            border: 1px solid $primary
+            background: $primary
+            
+
+
+    .form-style
+      +phone
+        padding: 80px 1rem 180px 1rem
+        border-radius: 0
+    .u-sub_mark
+      color: $primary
+      font-size: $m
+    .form-group
+      padding-bottom: $l
+      border-bottom: 1px solid $w
+      align-items: start
+      flex-direction: column
+      margin-bottom: $l
+
+      &:nth-last-child(1)
+        margin-bottom: 0
+        padding-bottom: 0
+        border: 0 
+
+      input
+        margin-right: 0.5rem
+        margin-left: 5px
+      
+      label
+        color: $secondary
+        +pad
+          font-size: $s
+      .box
+        +flex
+        margin-bottom: 0.5rem
+        &:nth-last-child(1)
+          margin-bottom: 0
+    
+    .star-group
+      +flex
+      .material-icons
+        font-size: 1.125rem
+    .star-sum 
+      margin-left: 0.5rem
+      color: $secondary
+      +pad
+        font-size: $xs
+
+    .range-select
+      display: block
+      
+      &_block
+        +flex
+        margin-top: $l
+        &_item
+          width: 100%
+          padding: 0.5rem 0.5rem
+          background: $w
+          &:nth-child(1)
+            margin-right: 1.25rem
+            +pad
+              margin-right: 0
+            &::after
+              content: '-'
+              position: absolute
+              left: 50%
+              top: 58%
+              transform: translateX(-50%)
+              +pad
+                top: 55%
+                content: ''
+                width: 1px
+                height: 36px
+                background: $primary-light
+
+          h6
+            font-size: $xs
+            font-weight: 700
+            color: $secondary-dark
+
+          p 
+            font-size:  $s
+            color: $secondary
+            +pad
+              font-size: $xs
+
+      .irs--round
+        margin-top: -$l
+        .irs-line 
+          top: 37px
+          height: 2px
+          background-color: $primary
+          border-radius: 4px
+
+        .irs-handle 
+          top: 30px
+          width: 16px
+          height: 16px
+          border: 0
+          background-color: $primary
+          border-radius: 50%
+
+        .irs-bar 
+          background-color: $primary
+
+
+  &_content
+    width: 66.6666%
+    padding: 15px 15px 0 15px
+    overflow: hidden
+    +phone
+      width: 100%
+      padding: 0
+      position: relative
+    // rwd 標題下按鈕
+
+    .result_aside-rwd
+      +flex
+      display: none
+      flex-direction: column
+      padding: 0 15px
+      +phone
+        display: flex
+      .u-sub
+        .u-sub_mark
+          color: $primary
+      .u-title
+        margin-bottom: 0.5rem
+        font-size: $xl
+      .btn-group
+        width: 100%
+        display: flex
+        margin-bottom: 0.5rem
+        a.active
+          color: $primary
+        a
+          +flex
+          width: 50%
+          display: flex
+          padding: 1rem 0
+          position: relative
+          &:nth-last-child(1)
+            &::after
+              display: none
+            
+          &:after
+            content: ''
+            width: 1px
+            height: 33px
+            background: $primary-light
+            position: absolute
+            right: 0
+
+        p
+          font-weight: 700
+          font-size: $xs
+          margin-left: 0.5rem
+          
+
+
+
+    &_nav
+      display: flex
+      margin-bottom: 33px
+      +pad
+        width: 100vw
+      +phone
+        display: none
+        width: calc( 100% - 30px )
+        margin: 0 15px
+        background: $primary-light
+        padding: 30px $l
+        flex-direction: column
+        border-radius: 0.5rem
+        position: absolute
+        top: 106px
+        z-index: 100
+      li
+        font-weight: 700
+        color: $secondary-dark
+        margin-right: $l
+        +phone
+          margin-right: 0
+          margin-bottom: $l
+          &:nth-last-child(1)
+            margin-bottom: 0
+            
+      li.active
+        color: $primary
+
+    .result_content_nav.show
+      display: flex
+
+
+    &_list
+      margin-bottom: $xxl
+      +pad
+        margin-bottom: $l
+      li:nth-last-child(1)
+        .u-card
+          padding-bottom: 0
+          margin-bottom: 0
+          border: 0
+      .u-card
+        padding-bottom: $l
+        border-bottom: 1px solid $primary-light
+        display: flex
+        margin-bottom: $l
+        +pad
+          padding-bottom: 1rem
+          margin-bottom: 1rem
+        +phone
+          margin-bottom: 0
+          padding-bottom: 0
+          border-bottom: 4px solid $primary-light
+        &_img
+          width: 35%
+          +phone
+            width: 42%
+          img
+            width: 100%
+            height: 175px
+            border-radius: 8px 0px 0px 8px
+            +pad
+              height: 150px
+              border-radius: 0
+        
+        &_body
+          width: 65%
+          padding: 1rem
+          display: flex
+          flex-wrap: wrap
+          align-items: flex-start
+          // border: 1px solid #000
+          +pad
+            padding: 0.5rem
+            // align-items: flex-end
+          +phone
+            width: 58%
+          &:hover
+            box-shadow: 5px 5px 5px $primary-light
+            transition: all .5s
+        &_subtitle
+          display: flex
+          p
+            height: 10px
+            +phone
+              height: 18px
+          .city
+            color: $primary
+            font-size: $xs
+          .space 
+            color: $secondary
+            font-size: $xs
+            +pad
+              display: none
+
+        &_title
+          font-family: 'Raleway'
+          font-weight: 700
+          color: $secondary-dark
+          font-size: $l
+          line-height: 1
+          +pad
+            font-size: 1rem
+            margin-bottom: 5px
+            width: 100%
+          +phone
+            margin-bottom: 3px
+        
+      .title-block
+        width: 100%
+        // border: 1px solid #f00
+        display: flex
+        flex-wrap: wrap
+        +phone
+          flex-direction: column
+        
+        .u-card_subtitle
+          +phone
+            order: 0
+        .u-card_title
+          +phone
+            order: 1
+        .star-block
+          +flex(flex-start,flex-start)
+          margin-left: auto
+          +pad
+            position: relative
+          +phone
+            margin-left: initial
+            order: 2
+          .star-group
+            height: 19px
+          .material-icons
+            font-size: 1.125rem
+          .star-sum
+            margin-left: 4px
+            font-size: $s
+            color: $secondary
+            transform: translateY(-3px)
+            +pad
+              position: absolute
+              right: 0
+              bottom: -20px
+              font-size: $xs
+            +phone
+              bottom: -3px
+              right: 50px
+
+
+      .msg-block
+        width: 70%
+        // border: 1px solid #0f0
+        +pad
+          width: 66%
+        +phone
+          width: 100%
+        .type
+          font-size: $s
+          font-weight: 700
+          color: $secondary
+        .visitor
+          font-size: $xs
+          color: $secondary
+          margin-bottom: 1rem
+          +pad
+            margin-bottom: 5px
+        .u-badges
+          +pad
+            display: block
+          +phone
+            display: none
+        .u-badges_item
+          +pad
+            font-size: 10px
+            padding: 2px 8px
+            // margin-bottom: 0.25rem
+      .price-block
+        width: 30%
+        height: 83px
+        // border: 1px solid #00f
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        align-self: flex-end
+        +pad
+          width: 34%
+        +phone
+          width: 100%
+          height: auto
+        .night
+          margin-top: auto
+          color: $secondary
+          font-size: $xs
+          margin-bottom: 3px
+          +phone
+            display: none
+        del
+          color: $secondary
+          font-family: 'Raleway'
+          +pad
+            font-size: $s
+          +phone
+            font-size: $xs
+            line-height: 1
+        .price
+          text-align: right
+          color: $secondary-dark
+          font-family: 'Raleway'
+          font-size: $l
+          font-weight: 700
+          +pad
+            font-size: 1rem
+          +phone
+            margin-top: auto
+            line-height: 1
+        .price.active
+          color: $primary

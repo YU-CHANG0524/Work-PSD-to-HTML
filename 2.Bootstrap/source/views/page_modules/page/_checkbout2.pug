@@ -1,0 +1,97 @@
+
+main.checkbout
+  section.container
+    .row.d-flex.justify-content-center
+      .col-12.col-md-10
+        .header
+          a.navbar-brand.py-3.text-dark(href='../index/index.html') Furniture
+
+
+    .row.justify-content-center.flex-column-reverse.flex-md-row
+      .col-12.col-md-6
+        ol.breadcrumb.bg-white.px-0.mb-3.mb-md-5
+          li.breadcrumb-item
+            a(href='#') 購物車
+          li.breadcrumb-item
+            a(href='#').text-dark 購物資訊
+          li.breadcrumb-item.active.font-weight-bold.text-dark(aria-current='page') 付款頁面
+
+        form.checkbout_form(action="")
+          h2.h5 資訊確認
+          
+          a(href="" ,data-toggle="collapse" data-target="#contactCollapse").btn.btn-white.border.border-bottom-0.d-flex.justify-content-between
+            p.mb-0.mr-5 聯絡資訊
+            p.mb-0.mr-1.text-info.fz-14 Joanne Lin / Joanne@m...
+            span.text-primary.material-icons keyboard_arrow_down
+          #contactCollapse.collapse.p-3.border.border-top-0
+            p Joanne Lin
+            p Joanne@mail.com
+            p.mb-0 +886 912-345-678
+
+          a(href="" ,data-toggle="collapse" data-target="#shipCollapse").btn.btn-white.border.d-flex.justify-content-between
+            p.mb-0.mr-5 運送到
+            p.mb-0.mr-1.text-info.fz-14 3F., No. 2, Ln. 1, Hello ...
+            span.text-primary.material-icons keyboard_arrow_down
+          #shipCollapse.collapse.p-3.border.border-top-0
+            p 3F., No. 2, Ln. 1, Hello 2nd Rd.,
+            p Woohoo Dist., Kaohsiung City 806, 
+            p.mb-0 Taiwan
+
+          h2.h5.mt-5.mt-md-6 信用卡
+          .form-group
+            input.form-control(type='password' ,placeholder="信用卡號碼")
+          .form-group
+            input.form-control(type='text' ,placeholder="信用卡名字")
+          .form-row.mb-6
+            .form-group.mb-0.col-md-6.mb-2.mb-md-0
+              input.form-control(type='text' ,placeholder="到期日 (MM / YY)")
+            .form-group.mb-0.col-md-6
+              input.form-control(type='password' ,placeholder="安全碼")
+
+          
+
+          .form-row.mb-3.pb-md-6.border-bottom.flex-column-reverse.flex-md-row
+            .col-md-6.d-flex.align-items-center
+              a(href="./checkbout1.html").py-4.w-100.w-md-auto.d-flex.align-items-center.justify-content-center.justify-content-md-start
+                span.material-icons keyboard_arrow_left
+                | 返回填寫資訊
+            .col-md-6    
+              a.btn.btn-primary.w-100(href="./checkbout3.html") 確認付款
+              
+        
+      .col-12.col-md-4.mb-4.mb-md-0
+        a.d-md-none(href="" ,data-toggle="collapse" data-target="#carCollapse").btn.btn-light.d-flex.justify-content-between
+          p.mb-0 Order Summary
+          p.mb-0.font-weight-bold.ml-auto.mr-1 NT$4,760
+          span.text-primary.material-icons keyboard_arrow_down
+        section#carCollapse.collapse.show.checkbout_total.p-3.p-md-6.bg-light.mt-md-8
+          ul.list-unstyled.border-bottom.mb-3
+            li.mb-3.card.border-0.flex-row.align-items-center.justify-content-between.bg-transparent
+              img.card-img-top(src='https://images.unsplash.com/photo-1476365518243-f738bf58443d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80', alt='')
+              h4.h6.mb-0.text-dark.font-weight-bold 小方桌 
+                span.ml-1.font-weight-light x1
+              p.mb-0 NT$1,080
+            li.mb-3.card.border-0.flex-row.align-items-center.justify-content-between.bg-transparent
+              img.card-img-top(src='https://images.unsplash.com/photo-1588084580191-db8604397b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80', alt='')
+              h4.h6.mb-0.text-dark.font-weight-bold 實木電腦桌
+                span.ml-1.font-weight-light x2
+              p.mb-0 NT$3,600
+          .d-flex.mb-3.justify-content-between
+            h6.mb-0.text-dark 小計
+            p.mb-0.text-dark NT$4,680
+          .d-flex.mb-3.pb-3.justify-content-between.border-bottom
+            h6.mb-0.text-dark 運費
+            p.mb-0.text-dark NT$80
+          .d-flex.justify-content-between
+            h4.mb-0.text-dark.font-weight-bold 總共
+            p.mb-0.h4.text-dark.font-weight-bold NT$4,760
+
+    .row.justify-content-center
+      .col-md-10
+        ul.checkbout_footer.list-unstyled.d-md-flex.align-items-center
+          li.mb-1.mb-md-0
+            a.mr-5.text-secondary.fz-14(href='#') Purchase Policy
+          li.mb-1.mb-md-0
+            a.mr-5.text-secondary.fz-14(href='#') Privacy Policy
+          li.mb-1.mb-md-0
+            a.mr-5.text-secondary.fz-14(href='#') Terms & Conditions  

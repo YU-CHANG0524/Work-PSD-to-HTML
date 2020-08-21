@@ -1,0 +1,91 @@
+
+main.checkbout
+  section.container
+    .row.d-flex.justify-content-center
+      .col-12.col-md-10
+        .header
+          a.navbar-brand.py-3.text-dark(href='../index/index.html') Furniture
+        
+        
+    .row.justify-content-center.flex-column-reverse.flex-md-row
+      .col-12.col-md-6
+        ol.breadcrumb.bg-white.px-0.mb-3.mb-md-5
+          li.breadcrumb-item
+            a(href='#') 購物車
+          li.breadcrumb-item
+            a(href='#').font-weight-bold.text-dark 購物資訊
+          li.breadcrumb-item.active(aria-current='page') 付款頁面
+
+        form.checkbout_form(action="")
+          h2.h5 聯繫信息
+
+          .form-group
+            input.form-control(type='email' ,placeholder="Email")
+          .custom-control.custom-checkbox.mb-5.mb-md-6
+            input#customCheck1.custom-control-input(type='checkbox')
+            label.custom-control-label.text-secondary.fz-14(for='customCheck1') 隨時了解最新消息和特價消息。
+
+          h2.h5 運送地址
+
+          .form-row
+            .form-group.col-md-6
+              input.form-control(type='text' ,placeholder="姓名")
+            .form-group.col-md-6
+              input.form-control(type='text' ,placeholder="電話")
+          .form-row
+            .form-group.col-md-6
+              select.form-control
+                option(selected='') 國家/地區
+                option ...
+            .form-group.col-md-6
+              select.form-control
+                option(selected='') 城市
+                option ...
+          .form-group.mb-5.mb-md-6
+            input.form-control(type='text' ,placeholder="地址")
+            
+          .form-row.mb-3.pb-md-6.border-bottom.flex-column-reverse.flex-md-row
+            .col-md-6.d-flex.align-items-center
+              a(href="../detail/detail.html").py-4.w-100.w-md-auto.d-flex.align-items-center.justify-content-center.justify-content-md-start
+                span.material-icons keyboard_arrow_left
+                | 返回購物車
+            .col-md-6    
+              a.btn.btn-primary.w-100(href="./checkbout2.html") 下一步
+              
+        
+      .col-12.col-md-4.mb-4.mb-md-0
+        a.d-md-none(href="" ,data-toggle="collapse" data-target="#carCollapse").btn.btn-light.d-flex.justify-content-between
+          p.mb-0 Order Summary
+          p.mb-0.font-weight-bold.ml-auto.mr-1 NT$4,760
+          span.text-primary.material-icons keyboard_arrow_down
+        section#carCollapse.collapse.show.checkbout_total.p-3.p-md-6.bg-light.mt-md-8
+          ul.list-unstyled.border-bottom.mb-3
+            li.mb-3.card.border-0.flex-row.align-items-center.justify-content-between.bg-transparent
+              img.card-img-top(src='https://images.unsplash.com/photo-1476365518243-f738bf58443d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80', alt='')
+              h4.h6.mb-0.text-dark.font-weight-bold 小方桌 
+                span.ml-1.font-weight-light x1
+              p.mb-0 NT$1,080
+            li.mb-3.card.border-0.flex-row.align-items-center.justify-content-between.bg-transparent
+              img.card-img-top(src='https://images.unsplash.com/photo-1588084580191-db8604397b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80', alt='')
+              h4.h6.mb-0.text-dark.font-weight-bold 實木電腦桌
+                span.ml-1.font-weight-light x2
+              p.mb-0 NT$3,600
+          .d-flex.mb-3.justify-content-between
+            h6.mb-0.text-dark 小計
+            p.mb-0.text-dark NT$4,680
+          .d-flex.mb-3.pb-3.justify-content-between.border-bottom
+            h6.mb-0.text-dark 運費
+            p.mb-0.text-dark NT$80
+          .d-flex.justify-content-between
+            h4.mb-0.text-dark.font-weight-bold 總共
+            p.mb-0.h4.text-dark.font-weight-bold NT$4,760
+
+    .row.justify-content-center
+      .col-md-10
+        ul.checkbout_footer.list-unstyled.d-md-flex.align-items-center
+          li.mb-1.mb-md-0
+            a.mr-5.text-secondary.fz-14(href='#') 採購政策
+          li.mb-1.mb-md-0
+            a.mr-5.text-secondary.fz-14(href='#') 隱私政策
+          li.mb-1.mb-md-0
+            a.mr-5.text-secondary.fz-14(href='#') 條款及細則 

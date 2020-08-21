@@ -1,0 +1,32 @@
+
+header.header
+  .g-container
+    h1.header_logo
+      a(href="../index/index.html" style="background: url(../../assets/images/logo.svg)") HOTEL
+    nav
+      a(href="").u-hamburger
+        .line
+        .line
+        .line
+      ul.header_nav
+        li.u-dropdown
+          a.u-dropdown_btn.jq_language_btn(href="./blog.html") 
+            span.material-icons language
+            span.u-arrow.jq_header_arrow
+          ul.u-dropdown_select.jq_language_select
+            li
+              a(href="") 繁體中文
+            li
+              a(href="") 简体中文
+            li
+              a(href="") English
+        li.u-dropdown.user-control
+          a.u-dropdown_btn(href="#") 
+            .user-icon
+              img(src="https://images.unsplash.com/photo-1487309078313-fad80c3ec1e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", alt="")
+            p David Lin
+            span.u-arrow
+        li.header_sign
+          a(href="./sign.html") 註冊
+        li.header_login
+          a(href="../login/login.html") 登入

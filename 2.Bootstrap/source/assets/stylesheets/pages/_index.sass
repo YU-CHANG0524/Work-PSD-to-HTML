@@ -1,0 +1,90 @@
+
+
+.home
+
+
+  .banner
+    +phone
+      max-width: initial
+      position: relative
+    &_bg
+      background-image: url(https://images.unsplash.com/photo-1559912963-0656cce47c13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2139&q=80)
+      background-position: center
+      background-size: cover
+      height: 100vh
+      width: 100vw
+        
+    &_body
+      h2
+        font-size: 3rem 
+        +phone
+          color: #fff !important
+      p
+        font-size: 1.5rem
+        +phone
+          font-size: 1rem
+          color: #9E9E9E !important
+      a
+        padding: 1.125rem 2.75rem
+        +phone
+          position: absolute
+          bottom: 0
+          
+
+    &-pos
+      +phone
+        height: 100%
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 1
+        transform: translate(-50%,-50%)
+        display: flex
+        flex-direction: column
+        justify-content: center
+      .btn-primary
+        +phone
+          width: calc(100% - 30px)
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          bottom: 1.5rem
+
+
+
+  .section2
+    height: 400px
+    background-size: cover
+    background-position: 10% 35%
+    background-image: url(https://images.unsplash.com/photo-1546572797-e8c933a75a1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)
+    
+  .section3
+
+    
+
+  &_slick
+    width: 100vw
+    +phone
+      width: 100%
+      margin: 0 auto
+
+    .card
+      position: relative
+      
+      width: 100%
+      &-img-top
+        height: 350px
+        object-fit: cover
+        +phone
+          height: 240px
+
+      p
+        margin-bottom: 0
+      .saleMark
+        position: absolute
+        top: 1rem
+        right: 1rem
+        font-size: 0.875rem
+  
+  
+    

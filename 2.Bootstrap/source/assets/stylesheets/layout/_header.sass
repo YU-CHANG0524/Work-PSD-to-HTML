@@ -1,0 +1,57 @@
+
+a
+  text-decoration: none !important;
+
+body 
+  overflow-x: hidden
+
+
+// header 的第二種樣式
+.header-style2.header-style2.header-style2
+  .nav-item.active
+    .nav-link
+      color: #0E8A00
+      font-weight: 900
+  .nav-link
+    color: #121212
+
+// header第三種樣式
+.header-style3.header-style3.header-style3
+  .navbar-collapse
+    display: none !important
+
+
+//header RWD 黑字樣式
+.header-rwd-blackText.header-rwd-blackText.header-rwd-blackText.header-rwd-blackText
+  .header
+    +phone
+      .material-icons 
+        color: #000 !important
+      a
+        color: #000
+
+.header
+  width: 100%
+  .navbar
+    &-brand
+      font-family: 'Raleway'
+      font-size: 1.5rem
+      font-style: italic
+      +phone
+        color: #fff
+        &:hover
+          color: #fff
+    &-nav
+      .nav
+        &-link
+          padding: 0 1.5rem
+          color: #fff
+
+  &_modal
+    .modal-dialog
+      max-width: initial
+      width: 100vw
+      height: 100vh
+    .h4
+      font-size: 1.5rem !important
+

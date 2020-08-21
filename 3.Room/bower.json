@@ -1,0 +1,19 @@
+{
+  "name": "develop_folder",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "slick-carousel": "slick-slide#^1.8.1",
+    "ion-rangeslider": "ion.rangeSlider#^2.3.1"
+  }
+}

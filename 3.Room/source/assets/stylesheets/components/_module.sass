@@ -1,0 +1,260 @@
+
+
+// 搜尋bar
+
+// search_bar 別頁樣式
+.m-search_bar-style.m-search_bar-style
+  width: 100%
+  position: fixed
+  top: 72px
+  z-index: 10
+  +phone
+    top: 56px
+  .m-search_bar-wrap
+    background: $primary-light
+
+    form
+      max-width: 1110px
+      margin: 0 auto
+      padding: 1.5rem 0
+      +pad
+        padding: 1rem 0
+        max-width: 690px
+
+    .form-group
+      width: 100%
+      input
+        width: calc( 100% - 1rem )
+        +pad
+          width: calc( 100% - 0.5rem )
+          margin-right: 0.5rem
+          padding-left: 1.375rem
+
+      >label
+        width: 100%
+
+      &-icon
+        left: 0.5rem
+
+      .fake-placeholder
+        +pad
+          left: 2.5rem
+      .input-result
+        +pad
+          left: 2.5rem
+      .range
+        display: none
+
+      .m-search_bar-date
+        .rwd-title
+          font-weight: 700
+          font-size: $xs
+          text-transform: uppercase
+        .check-in
+          width: 100%
+        .check-out
+          position: absolute
+          bottom: 0
+          right: 12px
+        .block.show
+          flex-direction: column
+          &::before
+            width: 4px
+            height: 1px
+            background: #000
+            left: 44%
+            top: 78%
+
+      
+.m-search_bar
+
+  &-wrap
+    width: 100%
+
+  form
+    +flex
+  
+
+  .hot-local-list.show
+    display: block
+
+  .guest-item.show
+    display: block
+
+
+
+  &-local
+    position: relative
+
+  &-date
+    position: relative
+    input
+      color: transparent
+
+    
+    .block
+      display: none
+      position: absolute
+      right: 16px
+      top: 50%
+      transform: translateY(-50%)
+      // display: flex
+      // border: 1px solid #000
+      width: calc( 100% - 68px )
+      &::before
+        position: absolute
+        left: 40%
+        top: 0
+        content: ''
+        width: 1px
+        height: 40px
+        // background: #000
+        background: $primary-light
+    .block.show
+      display: flex !important
+    .range
+      font-weight: 700
+      font-size: $xs
+      color: $secondary-dark
+      text-transform: uppercase
+    .date
+      font-size: $s
+      color: $secondary
+
+    .check-in
+      width: 50%
+
+
+  .form-group-icon
+    position: absolute
+    top: 1rem
+    left: 1rem
+  .fake-placeholder
+    color: $secondary
+    position: absolute
+    top: 1rem
+    left: 58px
+  .fake-placeholder.hide
+    display: none
+
+  .fake-placeholder.has-data
+    top: 10px
+    font-weight: 700
+    font-size: $xs
+    text-transform: uppercase
+    color: $secondary-dark
+  .input-result
+    position: absolute
+    top: 25px
+    left: 58px
+    font-size: $s
+    color: $secondary
+
+  .form-group
+    input
+      padding-left: 42px
+      padding-right: 10px
+      text-indent: 1rem
+    
+    &-list
+      li
+        +flex(flex-start,flex-start)
+        transition: all .5s
+        padding: 6px 16px
+        cursor: pointer
+        &:hover
+          background: $primary-light
+          
+      .value
+        margin-left: 10px
+        span
+          font-size: 10px
+          color: $secondary-light
+
+    .guest-item
+      li
+        padding: 1rem
+        +flex(space-between)
+        &:hover
+          background: $w
+      .btn-group
+        +flex
+        span 
+          width: 50px
+          text-align: center
+          color: $secondary-light
+
+  .submit-style
+    padding: 15px $xl
+    border-radius: 4px
+
+
+
+//===============================================================
+
+//訂閱欄
+
+.m-subscribe
+  background: $primary-light
+  padding: 5.75rem 0
+  +phone
+    padding: $l 0
+  &-wrap
+    +flex
+    flex-direction: column
+
+  .u-title
+    font-weight: 800
+    font-size: $xxl
+    margin-bottom: 0.5rem
+    +phone
+      font-size: $l
+  
+  .form-group
+    width: 100%
+    max-width: 540px
+    +phone
+      max-width: 328px
+    input
+      margin: 0
+      border-radius: 4px 0px 0px 4px
+      width: 70% 
+      +phone
+        width: 63%
+
+  .submit-style.submit-style
+    width: 30%
+    border-radius: 0px 4px 4px 0px 
+    +phone
+      padding: 1rem
+      font-size: 1rem
+      width: 37%
+
+// 別頁樣式
+.m-subscribe-style
+  padding: $xl 0
+  +flex
+  +pad
+    padding: $l 0
+  .m-subscribe-wrap
+    width: 100%
+    max-width: 1110px
+    flex-direction: row
+    justify-content: space-between
+    +pad
+      max-width: 690px
+    +phone
+      max-width: 330px
+      flex-direction: column
+  .form-group
+    max-width: 635px
+    // +pad
+    //   max-width: 
+  .u-title
+    font-size: $xl
+    margin-bottom: 0
+    margin-right: 0
+    +pad
+      font-size: $l
+    +phone
+      margin-bottom: 1rem

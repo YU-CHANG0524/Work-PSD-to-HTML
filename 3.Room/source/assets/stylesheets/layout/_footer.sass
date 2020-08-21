@@ -1,0 +1,77 @@
+
+//
+.footer.footer-style2
+  .g-container
+    border-top: 1px solid $primary-light
+
+//footer 別頁樣式
+.footer.footer-style
+  .g-container
+    max-width: 730px
+    border-top: 1px solid $primary-light
+  .footer_dropdown
+    display: none
+  .footer_msg
+    width: 100%
+    justify-content: space-between
+
+.footer
+  z-index: 10
+  .g-container
+    +flex(space-between)
+
+  &_msg
+    +flex
+    margin: 1.625rem 0
+    +pad
+      width: 100%
+      margin: 23px 0
+    +phone
+      flex-direction: column-reverse
+
+    .box
+      +flex
+      +pad
+        margin-left: auto
+      +phone
+        margin-left: 0
+        margin-bottom: 1rem
+      a:nth-last-child(1)
+        margin-right: 0
+
+    p,a
+      color: $secondary
+      font-size: $s
+
+    p 
+      margin-right: 4rem
+      +phone
+        margin-right: 0
+
+    a
+      margin-right: $l
+    
+  &_dropdown
+    +flex
+    +pad
+      display: none
+    .u-dropdown
+      margin-left: $l
+    .text
+      color: $secondary
+      font-size: $s
+      margin-left: 0.625rem
+
+    &-language
+      .u-dropdown_select
+        left: 7px
+        transform: translateY(-92px)
+      .u-dropdown_select.active
+        transform: translateY(-130px)
+
+    &-dollar
+      .u-dropdown_select
+        left: 0
+        transform: translateY(-92px)
+      .u-dropdown_select.active
+        transform: translateY(-130px)

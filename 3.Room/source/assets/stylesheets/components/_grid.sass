@@ -1,0 +1,31 @@
+//此處的sass 可共用到其他專案，可直接修改值 
+// 此處用 - 連結代表樣式  ， 不用 _ 因為代表模組階層
+//相同寬度部分
+
+.g-container
+  max-width: 1110px
+  margin: 0 auto
+  +desk
+    // max-width: 
+  +pad
+    max-width: 690px
+  +phone
+    max-width: 330px
+
+
+//相同間距部分
+
+.g-section-space
+  margin-bottom: 4.5rem
+  +pad
+    margin-bottom: $xxl
+  +phone
+    // padding: 
+
+.g-space-page
+  // padding: 
+  +pad
+    // padding: 
+  +phone
+    // padding: 
+

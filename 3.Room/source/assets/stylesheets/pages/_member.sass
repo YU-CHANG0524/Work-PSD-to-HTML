@@ -1,0 +1,221 @@
+
+.member
+  margin-top: 6rem
+  height: calc(100vh - 170px )
+  +pad
+    height: auto
+  +phone
+    margin-top: 82px
+  .member_wrap
+    margin: 0 -15px
+    display: flex
+    +pad
+      flex-direction: column-reverse
+  .col-8
+    width: 68.2%
+    padding: 0 15px
+    // border: 1px solid #000
+    +pad
+      width: 100%
+  .col-4
+    width: 31.5%
+    padding: 0 15px
+    // border: 1px solid #000
+    +pad
+      width: 100%
+      margin-bottom: $xxl
+
+
+  .u-title
+    font-size: $l
+
+  &_order
+    &_nav
+      display: flex
+      margin-bottom: $l
+      li
+        a
+          font-weight: 700
+          margin-right: $l
+      li.active
+        a
+          color: $primary
+
+    &_list
+      +pad
+        margin-bottom: 54px
+      
+  .u-card
+    display: flex
+    padding-bottom: $l
+    border-bottom: 1px solid $primary-light
+    margin-bottom: $l
+    position: relative
+    +phone
+      flex-direction: column
+      overflow: hidden
+      padding-bottom: 0
+      border: 0
+    &:nth-last-child(1)
+      border: 0
+      padding-bottom: 0
+      margin-bottom: 0
+    &_img
+      width: 35%
+      +pad
+        width: 40%
+      +phone
+        width: 100%
+      img
+        width: 100%
+        border-radius: 8px 0px 0px 8px
+        height: 175px
+        +phone
+          border-radius: 8px 8px 0 0 
+          height: 226px
+    
+    &_body
+      width: 65%
+      padding: 1rem
+      +pad
+        width: 60%
+      +phone
+        width: 100%
+        background: $primary-light
+        border-radius: 0 0 8px 8px
+        padding:  1rem 1rem 67px 1rem
+    
+    &_item
+      +flex(flex-start,flex-start)
+      margin-bottom: 0.5rem
+
+      &:nth-last-child(1)
+        margin-bottom: 0
+        
+      .material-icons
+        margin-right: 1rem
+    .view-btn
+      position: absolute
+      right: 1rem
+      top: 1rem
+      font-weight: 700
+      font-size: $s
+      color: $primary
+      text-transform: uppercase
+      +phone
+        bottom: 25px
+        left: $l
+        top: initial
+
+  .text
+    line-height: 1.375
+    &-1
+      color: $secondary-dark
+      font-weight: 700
+      
+    &-2
+      font-size: $s
+      color: $secondary
+
+  &_detail
+
+
+    &_title
+      +flex(flex-start)
+      margin-bottom: $l
+      +pad
+        margin-bottom: 1.25rem
+      +phone
+        margin-bottom: 1rem
+      .u-title
+        margin-bottom: 0
+        margin-right: 1rem
+      .badges
+        display: flex
+        padding: 0.25rem 0.5rem
+        background: $primary
+        border-radius: 13px
+        color: $w
+        font-size: $xs    
+        .material-icons
+          font-size: 18px
+          margin-right: 6px
+      .edit-btn
+        margin-left: auto
+        font-weight: 700
+        color: $primary
+        font-size: $s
+    &_content
+      background: $primary-light
+      padding: $l
+      border-radius: 0.5rem
+      position: relative
+      +pad
+        display: flex
+      +phone
+        flex-direction: column
+      .mb-24
+        margin-bottom: $l
+      .mb-16
+        margin-bottom: 1rem
+      
+      .text
+        +pad
+          width: 50%
+        +phone
+          width: 100%
+      .user
+        .text-2
+          +pad
+            margin-left: 78px
+          +phone
+            margin-left: 0
+          &:nth-last-child(1)
+            +pad
+              margin-bottom: 0
+            +phone 
+              margin-bottom: 1rem
+            
+      .user-img
+        +size(4rem,4rem)
+        object-fit: cover
+        border-radius: 0.5rem
+        position: absolute
+        top: $l
+        right: $l
+        +pad
+          right: initial
+          left: $l
+          top: 70px
+        +phone
+          top: 1rem
+          left: initial
+          right: 1rem
+
+      .credit
+        +flex(space-between)
+        
+        .block
+          background: $w
+          padding: 1rem
+          width: calc( 50% - 4px )
+          position: relative
+          border-radius: 4px
+          position: relative
+
+        .fab
+          position: absolute
+          bottom: 20px
+          right: 16px
+        .text-2
+          margin-bottom: 0.25rem
+
+        .add
+          height: 101px
+          +flex
+          a
+            +size($xl,$xl)
+            +flex
+            background: $primary
+            border-radius: 50%
+            color: $w

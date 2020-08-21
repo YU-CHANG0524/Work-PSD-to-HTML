@@ -1,0 +1,7 @@
+# 可以忽略不須上傳的檔案
+
+.tmp
+node_modules
+bower_components
+public
+gulpfile.js

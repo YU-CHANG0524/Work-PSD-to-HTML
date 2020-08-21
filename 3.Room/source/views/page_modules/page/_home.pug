@@ -1,0 +1,325 @@
+
+
+main.home
+
+  section.u-banner_slick
+    .slick_arrows
+      span.material-icons.jq_banner_slick_arrow-pre keyboard_arrow_left
+      span.material-icons.jq_banner_slick_arrow-next keyboard_arrow_right
+    ul.jq_home_banner_slick
+      li.u-banner_slick_item
+        picture
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          //- source(srcset='../../upload/banner-xs.png',media="(max-width: 576px)")
+          source(srcset='https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',media="(max-width: 768px)")
+          img(src='https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80', alt='My default image')
+          <!--[if IE 9]></video><![endif]-->
+        article.banner_body
+          h2.banner_title 超越期望的非凡體驗
+      li.u-banner_slick_item
+        picture
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          //- source(srcset='../../upload/banner-xs.png',media="(max-width: 576px)")
+          source(srcset='https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',media="(max-width: 768px)")
+          img(src='https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80', alt='My default image')
+          <!--[if IE 9]></video><![endif]-->
+        article.banner_body
+          h2.banner_title 發現您理想的酒店
+
+      li.u-banner_slick_item
+        picture
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          //- source(srcset='../../upload/banner-xs.png',media="(max-width: 576px)")
+          source(srcset='https://images.unsplash.com/photo-1534600913328-441f6abb4e2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80',media="(max-width: 768px)")
+          img(src='https://images.unsplash.com/photo-1534600913328-441f6abb4e2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80', alt='My default image')
+          <!--[if IE 9]></video><![endif]-->
+        article.banner_body
+          h2.banner_title 洲際人生，知行天下
+
+  section.search.m-search_bar
+    .search-wrap.m-search_bar-wrap
+      form.form-style(action="", method="post")
+        
+        .form-group
+          label.m-search_bar-local
+            span.material-icons.form-group-icon place
+            input.jq_local-input( type="text" id="id_location")
+            label.fake-placeholder.jq_fake-placeholder(for="id_location") 地點
+            p.input-result.jq_input-result
+          ul.form-group_list.hot-local-list.jq_hot-local-list 
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town 曼谷
+                span.jq_country 泰國
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town 大阪
+                span.jq_country 日本
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town 羅馬
+                span.jq_country 義大利
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town 巴黎
+                span.jq_country 倫敦
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town 雷克雅維克
+                span.jq_country 冰島
+        .form-group
+          label.m-search_bar-date
+            span.material-icons.form-group-icon date_range
+            input.jq_local-date.jq_date( type="text" id="id_date" readonly)
+            label.fake-placeholder.jq_fake-placeholder_2(for="id_date") 入住 / 退房
+            .block.jq_block
+              .check-in
+                p.range Check-in
+                p.date  17 June
+              .check-out
+                p.range Check-out
+                p.date  19 June
+            p.input-result.jq_input-date
+        
+        .form-group
+          label.m-search_bar-guest
+            span.material-icons.form-group-icon person
+            input.jq_local-guest( type="text" id="id_guest" readonly)
+            label.fake-placeholder.jq_fake-placeholder_1(for="id_guest") 人數
+            p.input-result.jq_input-guest
+
+          ul.form-group_list.guest-item.jq_guest-item
+            li
+              p.attribute 成人 
+              .btn-group
+                a.material-icons(href="") remove
+                span 2
+                a.material-icons(href="") add
+            li
+              p.attribute 孩童
+              .btn-group
+                a.material-icons(href="") remove
+                span 0
+                a.material-icons(href="") add
+            li
+              p.attribute 房間
+              .btn-group
+                a.material-icons(href="") remove
+                span 1
+                a.material-icons(href="") add
+        
+        a.submit-style(href="../result/result.html") 搜尋
+  
+  section.choices
+    .g-container.g-section-space
+      h2.u-title 熱門選擇
+      article.choices_tab
+        ul.choices_tab_nav
+          li.u-sub.active
+            p.u-sub_title 巴里島
+            span.u-sub_mark 128
+
+          li.u-sub
+            p.u-sub_title 沖繩
+            span.u-sub_mark 67
+
+          li.u-sub 
+            p.u-sub_title 台北
+            span.u-sub_mark 53
+
+        .choices_tab_content
+          
+          .choices_pane
+
+            .slick-arrow.jq_home_choices_slick-arrow
+              span.material-icons keyboard_arrow_right
+
+            ul.u-tab_content_pane.jq_home_choices_slick
+              li.u-card
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1569335468888-1d3e4a5a3595?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt="", srcset="")
+                .u-card_body
+                  h3.u-card_title 水上酒店
+                  .evaluate
+                    .star
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                    p.star_num 5.0
+                    p.sum 2k 評論
+                  .price
+                    p.original TWD 2,480
+                    del.discount TWD 3,980
+
+              li.u-card
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1564631028227-cd9886207fc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80", alt="", srcset="")
+                .u-card_body
+                  h3.u-card_title 川崎先生旅館
+                  .evaluate
+                    .star
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                    p.star_num 4.0
+                    p.sum 500 評論
+                  .price
+                    p.original TWD 3,380
+
+              li.u-card
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1506126279646-a697353d3166?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="", srcset="")
+                .u-card_body
+                  h3.u-card_title 美洲天堂
+                  .evaluate
+                    .star
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                    p.star_num 4.0
+                    p.sum 470 評論
+                  .price
+                    p.original TWD 4,780
+
+              li.u-card
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1206&q=80", alt="", srcset="")
+                .u-card_body
+                  h3.u-card_title 野獸酒店
+                  .evaluate
+                    .star
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                    p.star_num 4.0
+                    p.sum 283 評論
+                  .price
+                    p.original TWD 1,980
+
+              li.u-card
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1506126279646-a697353d3166?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="", srcset="")
+                .u-card_body
+                  h3.u-card_title 美洲天堂
+                  .evaluate
+                    .star
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                      span.material-icons grade
+                    p.star_num 4.0
+                    p.sum 470 評論
+                  .price
+                    p.original TWD 4,780
+
+  section.Destinations
+    .g-container.g-section-space
+      h2.u-title 熱門地點
+      ul.u-list.Destinations_list
+        li.u-card
+          .mask
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1537153960513-344d9f2e8216?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+            .u-card_body
+              .left
+                .u-card_title 日本
+                .u-card_subtitle 大阪
+              .right
+                span.arrow.material-icons keyboard_arrow_down
+        li.u-card
+          .mask
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1558862107-d49ef2a04d72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+            .u-card_body
+              .left
+                .u-card_title 日本
+                .u-card_subtitle 東京
+              .right
+                span.arrow.material-icons keyboard_arrow_down
+        li.u-card
+          .mask
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+            .u-card_body
+              .left
+                .u-card_title 冰島
+                .u-card_subtitle 雷克雅維克
+              .right
+                span.arrow.material-icons keyboard_arrow_down
+        li.u-card
+          .mask
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1449265614232-03dfc33163a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+            .u-card_body
+              .left
+                .u-card_title 倫敦
+                .u-card_subtitle 巴黎
+              .right
+                span.arrow.material-icons keyboard_arrow_down
+        li.u-card
+          .mask
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1529154036614-a60975f5c760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80", alt="")
+            .u-card_body
+              .left
+                .u-card_title 義大利
+                .u-card_subtitle 羅馬
+              .right
+                span.arrow.material-icons keyboard_arrow_down
+        li.u-card
+          .mask
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1582468546235-9bf31e5bc4a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80", alt="")
+            .u-card_body
+              .left
+                .u-card_title 泰國
+                .u-card_subtitle 曼谷
+              .right
+                span.arrow.material-icons keyboard_arrow_down
+
+  section.Inspiration
+    .g-container.g-section-space
+      .Inspiration_title
+        h2.u-title 隨機推薦
+        input.btn(type="button" value="查看更多") 
+      ul.u-list.Inspiration_list.jq_inspiration_list
+        li.u-card
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1509024644558-2f56ce76c490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+          .u-card_body
+            h3.u-card_title 第五訪問最多的國家
+            p.u-card_text 意大利是世界上訪問量排名第五的國家，總計5230萬……
+        li.u-card
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1558225818-388ab5bcd45d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt="")
+          .u-card_body
+            h3.u-card_title 前往泰國必去曼谷
+            p.u-card_text 亞洲遊客主要訪問泰國去曼谷和歷史悠久的自然風光……
+        li.u-card
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80", alt="")
+          .u-card_body
+            h3.u-card_title 指環王之旅
+            p.u-card_text 民族美食被描述為環太平洋地區，融合了當地的毛利人…
+        li.u-card
+          .u-card_img
+            img(src="https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80", alt="")
+          .u-card_body
+            h3.u-card_title 指環王之旅
+            p.u-card_text 民族美食被描述為環太平洋地區，融合了當地的毛利人…
+  section.m-subscribe
+    .m-subscribe-wrap
+      h2.u-title 訂閱獨家優惠
+      .form-group
+        input(type="text" placeholder="您的電子信箱")
+        input.submit-style(type="submit" value="訂閱") 

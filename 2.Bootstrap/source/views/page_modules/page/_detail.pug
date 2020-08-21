@@ -1,0 +1,163 @@
+
+main.detail
+  section.container.mb-8
+    .row.mb-7.blockPos
+      .col-md-8
+        .detail_img
+          img.img-fluid(src='https://images.unsplash.com/photo-1577306379609-dfba3ea2513d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', alt='')
+          p.saleMark.text-white.font-weight-bold On Sale 
+      .col-md-5.detail_countBlock
+        .detail_countBlock_body.py-6.pl-6.bg-white
+          ol.p-0.breadcrumb.bg-white
+            li.breadcrumb-item.text-secondary 首頁
+            li.breadcrumb-item.text-secondary 產品列表 
+            li.breadcrumb-item.text-secondary 桌子
+
+          h2.mb-3.font-weight-bold.title 高級電腦桌
+          
+          ul.w-100.btn-group.p-0.mb-0.w-100.d-flex.flex-wrap.list-unstyled
+            li.order-3.order-md-1.price.text-right.mb-md-5
+              p.mb-0.price_original.text-secondary
+                del NT$1,200
+              p.mb-0.price_discount NT$1,080
+            li.order-2.d-flex.sumAdd
+              span.btn.btn-light.material-icons remove
+              span.btn.btn-light.txt 1
+              span.mr-1.btn.btn-light.material-icons add
+            li.order-4.addToCartBtn
+              input.form-control.btn.btn-primary.d-block(type="button", value="加到購物車",data-toggle='modal', data-target='#cartModal' )
+
+    .row
+      .col-md-5
+        p.mb-3.mb-md-0.detail_descript 選用高品質木頭製作，耐刮、耐髒、防潑水，木紋清晰美觀，質地細膩，雙層大容量抽屜，採取開口較大的梯型設計，可以根據喜好收納各種用品。
+
+      .col-md-3
+        p.mb-0.text-secondary.rwd-fz14 台灣製造
+        p.mb-0.text-secondary.rwd-fz14 100 x 150 x 60 cm 
+        p.mb-0.text-secondary.rwd-fz14 經過安全認證
+
+  section.container
+    h3.mb-5.h2.font-weight-bold 你也可能喜歡…
+    ul.row.list-unstyled.px-0.mb-8.home_slick
+      li.col-4
+        .card.border-0
+          img.mb-2.card-img-top(src='https://images.unsplash.com/photo-1577306379609-dfba3ea2513d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', alt='')
+          h4.mb-1.text-dark.font-weight-bold.card-title 高級原木書桌
+          .card-text.d-flex
+            p.mr-1 NT$1,080
+            p.text-info
+              del
+                |NT$1,200
+          p.saleMark.text-white.font-weight-bold On Sale 
+          
+      li.col-4
+        .card.border-0
+          img.mb-2.card-img-top(src='https://images.unsplash.com/photo-1476365518243-f738bf58443d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80', alt='')
+          h4.mb-1.text-dark.font-weight-bold.card-title 小方桌
+          .card-text.d-flex
+            p.mr-1 NT$2,800
+          
+      li.col-4
+        .card.border-0
+          img.mb-2.card-img-top(src='https://images.unsplash.com/photo-1588084580191-db8604397b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80', alt='')
+          h4.mb-1.text-dark.font-weight-bold.card-title 實木電腦桌
+          .card-text.d-flex
+            p.mr-1 NT$4,800
+          
+      li.col-4
+        .card.border-0
+          img.mb-2.card-img-top(src='https://images.unsplash.com/photo-1581839672503-4e762accfbdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', alt='')
+          h4.mb-1.text-dark.font-weight-bold.card-title 實木辦公桌
+          .card-text.d-flex
+            p.mr-1 NT$1,080
+          
+      li.col-4
+        .card.border-0
+          img.mb-2.card-img-top(src='https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', alt='')
+          h4.mb-1.text-dark.font-weight-bold.card-title 實木桌
+          .card-text.d-flex
+            p.mr-1 NT$1,080
+      li.col-4
+        .card.border-0
+          img.mb-2.card-img-top(src='https://images.unsplash.com/photo-1580480095047-4aa43ab3bd1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60', alt='')
+          h4.mb-1.text-dark.font-weight-bold.card-title 電腦椅
+          .card-text.d-flex
+            p.mr-1 NT$1,080
+
+
+
+  #cartModal.modal.fade(data-backdrop="static",data-keyboard="false", tabindex='-1')
+    .modal-dialog
+      .modal-content
+        .d-flex.justify-content-between.align-items-start
+          .mt-1.title.d-flex
+            h3.font-weight-bold.mr-1 購物車
+            span.font-weight-bold.text-primary 3 
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span.text-dark.material-icons(aria-hidden='true') clear
+        ul.p-0.mb-3
+          li.card.mb-1.bg-light.border-0
+            .row.no-gutters
+              .col-4.col-sm-3
+                img.card-img(src='https://images.unsplash.com/photo-1476365518243-f738bf58443d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80', alt='...')
+              .col-8.col-sm-9
+                .card-body.h-100.p-2.p-md-3.d-flex.flex-column
+                  .d-flex.justify-content-between
+                    h5.h6.mb-0.font-weight-bold 小方桌
+                    a.text-dark.material-icons(href="#") clear
+                  .d-flex.align-items-center
+                    p.mb-0.mr-1.text-secondary NT$1,080
+                    del.text-info.fz-14 NT$1,200
+                  .d-flex.mt-auto.justify-content-between
+                    ul.list-unstyled.d-flex.count.w-100
+                      li.mr-3
+                        a(href="#").text-dark.material-icons remove
+                      li.mr-3
+                        span 1
+                      li.mr-3
+                        a(href="#").text-dark.material-icons add
+                      li.ml-auto
+                        a.font-weight-bold.text-dark(href="#") NT$1,080
+          li.card.mb-1.bg-light.border-0
+            .row.no-gutters
+              .col-4.col-sm-3
+                img.card-img(src='https://images.unsplash.com/photo-1588084580191-db8604397b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80', alt='...')
+              .col-8.col-sm-9
+                .card-body.h-100.p-2.p-md-3.d-flex.flex-column
+                  .d-flex.justify-content-between
+                    h5.h6.mb-0.font-weight-bold 實木電腦桌
+                    a.text-dark.material-icons(href="#") clear
+                  .d-flex.align-items-center
+                    p.mb-0.mr-1.text-secondary NT$1,800
+                  .d-flex.mt-auto.justify-content-between
+                    ul.list-unstyled.d-flex.count.w-100
+                      li.mr-3
+                        a(href="#").text-dark.material-icons remove
+                      li.mr-3
+                        span 2
+                      li.mr-3
+                        a(href="#").text-dark.material-icons add
+                      li.ml-auto
+                        a.font-weight-bold.text-dark(href="#") NT$3,600
+
+        .modal-footer.border-0
+          .row.w-100.d-flex.justify-content-end
+            .col-md-9
+              .total
+                .d-flex.mb-2.justify-content-between
+                  h6.mb-0.text-secondary 小計
+                  p.mb-0.text-secondary NT$4,680
+                .d-flex.mb-3.justify-content-between
+                  h6.mb-0.text-secondary 運費
+                  p.mb-0.text-secondary NT$80
+                .d-flex.mb-4.justify-content-between
+                  h4.mb-0.font-weight-bold 總共
+                  h4.mb-0.font-weight-bold NT$4,760
+                a.w-100.btn.btn-primary.checkbtn(href="../cart/checkbout1.html") 結帳
+                
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+
+
+
+.receive
+  margin-top: 4.5rem
+  padding-top: $l
+  display: flex
+  justify-content: center
+  height: calc(100vh - 146px)
+  +phone
+    height: auto
+    max-width: initial
+    padding: 0 15px
+  &-wrap
+    width: 100%
+    max-width: 730px
+
+    .u-title
+      width: 100%
+      padding-bottom: $xl
+      position: relative
+      margin-bottom: 0
+      +phone
+        padding-bottom: $l
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background: $primary-light
+    .block
+      border-bottom: 1px solid $primary-light
+      padding: $l 0   
+
+    .mb-16
+      margin-bottom: 1rem
+
+    .mb-24
+      margin-bottom: $l
+
+    .name
+      font-weight: 700
+      color: $secondary-dark
+      width: 26%
+      text-transform: capitalize
+      +phone
+        font-size: $s
+    .value
+      color: $secondary
+      +phone
+        font-size: $s
+
+    .flex
+      +flex(flex-start)
+      +phone
+        position: relative
+
+    .tips
+      font-size: $xs
+      color: $primary
+      margin-left: 1rem
+      +phone
+        position: absolute
+        left: 26%
+        top: 16px
+        margin-left: 0
+
+
+    .btn
+      +flex
+      background: $primary
+      color: $w
+      text-transform: uppercase
+      font-weight: 700
+      padding: 1rem $xl
+      border-radius: 4px
+      +phone
+        width: 100%
+        margin-bottom: 0.5rem
+
+    .btn-group
+      +flex(flex-end)
+      +phone
+        flex-direction: column
+        margin-bottom: 40px
+
+    .out-line
+      border: 1px solid $primary
+      background: $w
+      color: $primary
+      margin-right: 0.5rem
+      +phone
+        margin-right: 0
+

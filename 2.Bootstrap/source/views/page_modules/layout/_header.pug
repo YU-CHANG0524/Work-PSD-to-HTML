@@ -1,0 +1,61 @@
+
+
+header.header
+  .container
+    nav.navbar.navbar-expand-lg.navbar-light.px-0
+      a.order-2.order-md-0.navbar-brand.py-3.m-0(href='../index/index.html') Furniture
+      button.order-1.navbar-toggler.border-0(type='button', data-toggle='modal', data-target='#headerModal', aria-controls='headerNavbar', aria-expanded='false', aria-label='Toggle navigation')
+        span.text-white.material-icons dehaze
+      #headerNavbar.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='../product/product.html') 產品
+          li.nav-item
+            a.nav-link(href='#') 部落格
+          li.nav-item
+            a.nav-link(href='#') 聯絡我們
+          li.nav-item.d-none.d-md-block
+            a.nav-link.material-icons.pr-0(href='#') shopping_cart
+      a.order-3.d-md-none.text-white.nav-link.material-icons.pr-0(href='../product/product.html') shopping_cart
+
+#headerModal.modal.fade.header_modal(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.m-0.w-100.h-100
+    .modal-content.border-0.rounded-0.w-100.h-100
+      .modal-header.d-flex.justify-content-between.align-items-center.border-0
+        button.m-0.close(type='button', data-dismiss='modal', aria-label='Close')
+          span.material-icons(aria-hidden='true') arrow_back
+        
+        a.text-dark.nav-link.material-icons.p-0(href='#') shopping_cart
+        
+      .modal-body
+        #accordionExample.accordion
+          .card.border-0.rounded-0
+            a.btn.btn-link.btn-block.text-left.border-bottom.text-dark.h4.font-weight-bold(href="#", data-toggle='collapse', data-target='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+              | Product
+            #collapseOne.collapse.show(aria-labelledby='headingOne', data-parent='#accordionExample')
+              .card-body.p-3
+                ul.list-unstyled
+                  li.mb-3
+                    a.text-secondary(href="") ALL24
+                  li.mb-3
+                    a.text-secondary(href="") BOWL10
+                  li.mb-3
+                    a.text-secondary(href="") CUP8
+                  li.mb-3
+                    a.text-secondary(href="") PLATE3
+                  li.mb-3
+                    a.text-secondary(href="") VASE3
+          .card.border-0.rounded-0
+            a.btn.btn-link.btn-block.text-left.border-bottom.text-dark.h4.font-weight-bold.collapsed(href="#", data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+              | Blog
+            #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordionExample')
+              .card-body.p-3
+                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          .card.border-0.rounded-0
+            a.btn.btn-link.btn-block.text-left.border-bottom.text-dark.h4.font-weight-bold.collapsed(href="#", data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+              | Contact
+            #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordionExample')
+              .card-body.p-3
+                | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+    

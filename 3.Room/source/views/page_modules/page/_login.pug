@@ -1,0 +1,40 @@
+
+main.login
+  .left(style="background: url('https://images.unsplash.com/photo-1559321623-f0c2b0e82d3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80')")
+
+    .login_title
+      h2.title An ideal hotel makes a<br> wonderful Trip.
+      h3.description Discover your dream destination and hotel on ALOHA.com
+      
+      .badges
+        span.material-icons place
+        p Osaka Castel, Japan 
+      
+  .right
+    
+    .login_form
+      h3 Login
+
+      .form-group
+        label(for="") Email
+        input(type="email")
+
+      .form-group
+        label(for="") Passwords
+        input(type="password")
+
+      p.tips
+        | By signing in or creating an account, you agree with our
+        a(href='') Terms & Conditions
+        | and
+        a(href='') Privacy Statement
+
+      .form-group.check-set
+        input(type="checkbox", name="remember")
+        label(for="remember") Remember me
+      
+      .form-group
+        a.btn(href="../login/member.html", title="title") Login
+        .tips.text-center
+          | Don’t have an account yet? 
+          a(href="") Sign up

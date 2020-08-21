@@ -1,0 +1,295 @@
+
+main.detail
+
+  section.search.m-search_bar.m-search_bar-style
+
+    //- 767以下的search bar
+    .search_bar-rwd
+      span.material-icons arrow_back
+      p Bangkok・17 June - 19 June・2 adults・1 room
+
+    .search-wrap.m-search_bar-wrap
+      form.form-style(action="", method="post")
+        
+        .form-group
+          label.m-search_bar-local
+            span.material-icons.form-group-icon place
+            input.jq_local-input( type="text" id="id_location")
+            label.fake-placeholder.jq_fake-placeholder(for="id_location") Destination
+            p.input-result.jq_input-result
+          ul.form-group_list.hot-local-list.jq_hot-local-list 
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Bangkok
+                span.jq_country Thailand
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Osaka
+                span.jq_country Japan
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Roma
+                span.jq_country Italy
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Paris
+                span.jq_country London
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Reykjavik
+                span.jq_country Iceland
+        .form-group
+          label.m-search_bar-date
+            span.material-icons.form-group-icon date_range
+            input.jq_local-date.jq_date( type="text" id="id_date" readonly)
+            label.fake-placeholder.jq_fake-placeholder_2(for="id_date") Check-in / out
+            .block.jq_block
+              .check-in
+                p.rwd-title Check-in / out
+                p.range Check-in
+                p.date  17 June
+              .check-out
+                p.range Check-out
+                p.date  19 June
+            p.input-result.jq_input-date
+        
+        .form-group
+          label.m-search_bar-guest
+            span.material-icons.form-group-icon person
+            input.jq_local-guest( type="text" id="id_guest" readonly)
+            label.fake-placeholder.jq_fake-placeholder_1(for="id_guest") Guests
+            p.input-result.jq_input-guest
+
+          ul.form-group_list.guest-item.jq_guest-item
+            li
+              p.attribute Adult 
+              .btn-group
+                a.material-icons(href="") remove
+                span 2
+                a.material-icons(href="") add
+            li
+              p.attribute Child
+              .btn-group
+                a.material-icons(href="") remove
+                span 0
+                a.material-icons(href="") add
+            li
+              p.attribute Room
+              .btn-group
+                a.material-icons(href="") remove
+                span 1
+                a.material-icons(href="") add
+        
+        a.submit-style(href="../result/result.html") SEARCH
+
+  section.g-container.rwd-set
+    .detail-wrap
+      article.detail_content.g-section-space
+        //-slick箭頭
+        a(href="").material-icons.jq_detail_content_slick-pre keyboard_arrow_left
+        a(href="").material-icons.jq_detail_content_slick-next keyboard_arrow_right
+        //- slick部分
+        ul.detail_content_slick.jq_detail_content_slick
+          li
+            img(src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80", alt="")
+          li
+            img(src="https://images.unsplash.com/photo-1560920174-92abf3b69a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt="")
+          li
+            img(src="https://images.unsplash.com/photo-1560920452-dcdcbbb4e117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80", alt="")
+          li
+            img(src="https://images.unsplash.com/photo-1560920452-da0369e98fe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt="")
+
+
+        .detail_content_img
+          .col-7
+            img(src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80", alt="")
+          .col-5
+            .top
+              img(src="https://images.unsplash.com/photo-1560920174-92abf3b69a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt="")
+            .bottom
+              .left
+                img(src="https://images.unsplash.com/photo-1560920452-dcdcbbb4e117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80", alt="")
+              .right
+                img(src="https://images.unsplash.com/photo-1560920452-da0369e98fe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", alt="")
+                a(href="#") SEE ALL 10 PHOTOS
+
+        .detail_content_body
+          .detail_content_title
+            h2.u-title Rachada Hotel
+            .star-block
+              .star-group 
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+              span.star-sum 4.0 (283)
+          h3.subtitle 318 Phaya Thai Road, Ratchathewi, Phaya Thai, 10400 Bangkok, Thailand
+          p.detail_content_text
+            |The Rachada Hotel is an establishment that provides paid lodgi
+            |ng on a short-term basis. Facilities provided may range from a m
+            |odest-quality mattress in a small room to large suites with bigger,
+            |higher-quality beds, a dresser, a refrigerator and other kitchen fa
+            |cilities, upholstered chairs, a flat screen television, and en-suite bathrooms.
+
+      section.detail_select.g-section-space
+        h3.u-title Select your room
+        .detail_select_options
+          ul
+            li Bangkok, Thailand
+            li 17 June - 19 June・2 nights
+            li 2 adults・1 room
+          a(href="#").edit EDIT DETAIL
+        .detail_select_table.u-table
+          ul.u-table_head
+            li.col-6 Room Type
+            li.col-2 Sleeps
+            li.col-2 Price
+            li.col-2 Rooms
+
+          ul.u-table_body
+            li.u-card
+              .col-6
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1574643014728-053f16745e49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+                .u-card_body
+                  h3.u-card_title Deluxe Double Room A
+                  h4.u-card_subtitle 1 bed (Queen size)
+                  ul.service
+                    li
+                      span.material-icons wifi
+                      p Wi-Fi
+                    li
+                      span.material-icons restaurant
+                      p breakfast
+                    li
+                      span.material-icons tv
+                      p television
+                    li
+                      span.material-icons ac_unit
+                      p air conditioner
+                    li
+                      span.material-icons room_service
+                      p room service
+                    li
+                      span.material-icons smoke_free
+                      p smoke free
+              .col-2
+                .sleeps
+                  span.material-icons person
+                  span.material-icons person
+              .col-2
+                .price-block
+                  del TWD 1,980
+                  p.price.active TWD 1,490
+                  span.night per night
+              .col-2
+                .rooms
+                  a(href="#").jq_overlay-show.material-icons remove
+                  span.rooms-count 0
+                  a(href="#").jq_overlay-show.material-icons add
+            li.u-card
+              .col-6
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1583845112203-29329902332e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80", alt="")
+                .u-card_body
+                  h3.u-card_title Deluxe Double Room B
+                  h4.u-card_subtitle 1 bed (Queen size)
+                  ul.service
+                    li
+                      span.material-icons wifi
+                      p Wi-Fi
+                    li
+                      span.material-icons restaurant
+                      p breakfast
+                    li
+                      span.material-icons tv
+                      p television
+                    li
+                      span.material-icons ac_unit
+                      p air conditioner
+                    li
+                      span.material-icons room_service
+                      p room service
+                    li
+                      span.material-icons smoke_free
+                      p smoke free
+              .col-2
+                .sleeps
+                  span.material-icons person
+                  span.material-icons person
+              .col-2
+                .price-block
+                  p.price TWD 1,600
+                  span.night per night
+              .col-2
+                .rooms
+                  a(href="#").jq_overlay-show.material-icons remove
+                  span.rooms-count 0
+                  a(href="#").jq_overlay-show.material-icons add
+            li.u-card
+              .col-6
+                .u-card_img
+                  img(src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80", alt="")
+                .u-card_body
+                  h3.u-card_title Deluxe Suite with Pool
+                  h4.u-card_subtitle 1 bed (Queen size)
+                  ul.service
+                    li
+                      span.material-icons wifi
+                      p Wi-Fi
+                    li
+                      span.material-icons restaurant
+                      p breakfast
+                    li
+                      span.material-icons tv
+                      p television
+                    li
+                      span.material-icons ac_unit
+                      p air conditioner
+                    li
+                      span.material-icons kitchen
+                      p refrigerator
+                    li
+                      span.material-icons room_service
+                      p room service
+                    li
+                      span.material-icons local_bar
+                      p mini bar
+                    li
+                      span.material-icons smoke_free
+                      p smoke free
+              .col-2
+                .sleeps
+                  span.material-icons person
+                  span.material-icons person
+              .col-2
+                .price-block
+                  p.price TWD 1,980
+                  span.night per night
+              .col-2
+                .rooms
+                  a(href="#").jq_overlay-show.material-icons remove
+                  span.rooms-count 1
+                  a(href="#").jq_overlay-show.material-icons add
+
+  section.m-subscribe.m-subscribe-style
+    .m-subscribe-wrap
+      h2.u-title Subscribe for Exclusive Offer
+      .form-group
+        input(type="text" placeholder="Your email address")
+        input.submit-style(type="submit" ,value="SUBSCRIBE") 
+
+  section.detail_overlay
+    .g-container
+      .total
+        p.type 1 room・2 night
+        p.price TWD 3,960
+      .btn-group
+        a(href="#").jq_overlay-cancel.cancel-btn Cancel
+        a(href="../detail/reservation.html").reserve-btn Reserve
+

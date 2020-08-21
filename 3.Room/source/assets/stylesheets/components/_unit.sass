@@ -1,0 +1,387 @@
+
+// 漢堡選單 ============================================================
+.u-hamburger
+  +size(40px,40px)
+  display: none
+  flex-direction: column
+  +phone
+    +flex(center,center)
+  .line
+    +size(22px,2px)
+    background: $secondary-dark
+    margin: 0 0 3px 0 
+    transition: transform .5s
+  &.active
+    .line
+      position: absolute
+    .line:nth-child(2)
+      display: none
+    .line:nth-child(1)
+      transform: rotate(45deg)
+    .line:nth-child(3)
+      transform: rotate(-45deg)
+
+// 下一頁導覽列 ============================================================
+.u-pagination
+  +flex(space-between)
+  padding: 1rem
+  background: $primary-light
+  border-radius: 8px;
+  +phone
+    max-width: 330px
+    margin: 0 auto
+  ul
+    display: flex
+  .btn
+    padding: 0.5rem 1rem
+    line-height: 1.375
+    border-radius: 4px;
+    color: $w
+    background: $primary
+    font-weight: 700
+    border: 1px solid $primary
+    +pad
+      display: none
+  .btn.outline
+    color: $primary
+    background: transparent
+
+  .rwd-arrow
+    display: none
+    +pad
+      +size(40px,40px)
+      display: block
+      padding: 0.5rem
+      +flex
+      &:hover
+        transition: all .5s
+        background: $primary
+        color: $w
+  .rwd-display-none
+    +pad
+      display: none
+
+  .pagination-number
+    a
+      +size(38px,38px)
+      +flex
+      border-radius: 3px
+      color: $secondary-dark
+      font-weight: 700
+
+  //- 目前頁數樣式 .active
+  .active
+    a
+      background: $w
+
+
+//麵包屑 ============================================================
+.u-breadcrumb
+  
+  +rwd(1300)
+    padding: 0 1.5rem 0 1.5rem 
+  +pad
+    padding: 0 3rem 0 3rem 
+  +phone
+    padding: 0 0.75rem 0 0.75rem 
+
+
+
+  ul
+    display: flex
+    +rwd(375)
+      flex-wrap: wrap
+      justify-content: center
+
+  li:nth-child(n+2)
+    position: relative
+    &::before
+      position: absolute
+      top: 4px
+      left: -12px
+      content: ""
+      width: 1px
+      height: 16px
+      // background: $b
+      transform: rotate(20deg)
+      
+  a
+    font-weight: 200
+    padding: 0 1.375rem 0 0  
+    +pad
+      font-size: 0.875rem
+
+  .active
+    font-weight: 200
+    padding: 0 1.375rem 0 0  
+    // color: $r
+
+
+//自訂元件區============================================================
+
+
+// 三角箭頭 
+.u-arrow
+  transition: all .5s
+  margin-left: 0.625rem
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 6px 5px 0 5px
+  border-color: #000000 transparent transparent transparent
+// 三角箭頭狀態
+.u-arrow.active
+  border-width: 0 5px 6px 5px
+  border-color: transparent transparent #000000 transparent
+
+// ====================================================================
+
+// 下拉選單
+.u-dropdown
+  position: relative
+  &_btn
+    +flex
+    
+  &_select
+    position: absolute
+    left: -26px
+    bottom: -94px
+    width: 100px
+    border-radius: 8px
+    text-align: center
+    background: $primary-light
+    transform: translateY(-30px)
+    transition: all .5s
+    z-index: -10000
+    opacity: 0
+
+    a
+      padding: 4px
+      font-size: $s
+  //下拉選單狀態
+  &_select.active
+    z-index: 1
+    opacity: 1
+    transform: translateY(0px)
+
+// ====================================================================
+
+// banner-slick
+
+.u-banner_slick
+  position: relative
+  .slick_arrows
+    +poac
+    +flex(space-between)
+    +stopSelect
+    width: 100%
+    max-width: 920px
+    z-index: 1
+    .material-icons
+      +size($xxl,$xxl)
+      cursor: pointer
+      color: $w
+      font-size: $xxl
+  &_item
+    position: relative
+  img
+    width: 100%
+    height: 320px
+    object-fit: cover
+  .banner_body
+    +flex
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0,0,0,0.4)
+  
+  .banner_title
+    font-family: 'Raleway'
+    font-weight: 800 
+    font-size: $xxl
+    color: $w
+
+// ====================================================================
+
+//form 表單樣式設定 不算組件
+.form-style
+  background: $primary-light
+  padding: $l
+  border-radius: 0.5rem
+  .small-title
+    font-weight: 700
+    margin-bottom: 1rem
+    color: $secondary-dark
+input
+  padding: 1.125rem $xl
+  background: $w
+  border-radius: 4px
+  border: 0 
+  margin-right: 1rem
+
+.submit-style
+  color: $w
+  background: $primary
+  padding: 1.125rem $xl
+  font-weight: 700
+  margin-right: 0
+
+.form-group
+  +flex
+  position: relative
+  &-icon
+    position: absolute
+    left: 1rem
+
+  &_list
+    // 要做input 才取消 display:none
+    display: none
+
+    background: $w
+    width: calc(100% - 16px)
+    position: absolute
+    left: 0
+    bottom: 0
+    border-radius: 4px
+    transform: translateY(calc( 100% + 8px ))
+    box-shadow: 0 0 20px #f1f1f1
+    li
+      +flex(flex-start,flex-start)
+      transition: all .5s
+      padding: 6px 16px
+      cursor: pointer
+      &:hover
+        background: $primary-light
+        
+    .value
+      margin-left: 10px
+      span
+        font-size: 10px
+        color: $secondary-light
+
+
+// ====================================================================
+
+// 標題樣式
+
+.u-title
+  font-size: $xl
+  color: $secondary-dark
+  font-family: 'Raleway'
+  font-weight: 700
+  margin-bottom: $l
+  +phone
+    font-size: $l
+
+
+
+// 帶有上標文字
+.u-sub
+  +stopSelect
+  display: flex
+  font-family: 'Raleway'
+  font-weight: 700
+  &_title
+    font-size: $l
+  &_mark  
+    font-size: $s
+
+
+// ====================================================================
+
+// 卡片樣式
+
+.u-card
+
+  &_img
+    img
+      border-radius: 8px
+      object-fit: cover
+
+  &_body
+
+  &_title
+    font-family: 'Raleway'
+    font-weight: 700
+    color: $secondary-dark
+    margin-bottom: 0.5rem
+  &_subtitle
+    color: $secondary
+  &_text
+    color: $secondary
+
+
+// ====================================================================
+
+// 切換tabs
+
+.u-tab
+
+  &_nav
+
+    &_item
+
+  &_content
+
+    &_pane
+
+// ====================================================================
+
+// 清單list
+
+.u-list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -15px
+  margin-right: -15px
+  li
+    padding-left: 15px
+    padding-right: 15px
+
+// ====================================================================
+
+// badges 徽章
+
+.u-badges
+  display: flex
+  &_item
+    background: $primary-light
+    border-radius: 13px
+    margin-right: 4px
+    padding: 4px 8px
+    font-size: $xs
+    color: $secondary
+    display: inline-block
+
+// ====================================================================
+
+// 表格
+
+.u-table
+
+  // 欄寬
+  .col-6
+    // padding: 0 15px
+    width: 50%
+    +flex
+  .col-2
+    // padding: 0 15px
+    width: 16.66666%
+    text-align: center
+    +flex
+  &_head
+    padding-bottom: 0.5rem
+    border-bottom: 1px solid $primary-light
+    // border: 1px solid #000
+    font-weight: 700
+    color: $secondary-dark
+    text-transform: uppercase
+    display: flex
+    margin-bottom: $l
+    // margin-left: -15px
+    // margin-right: -15px
+  &_body
+    li
+      display: flex

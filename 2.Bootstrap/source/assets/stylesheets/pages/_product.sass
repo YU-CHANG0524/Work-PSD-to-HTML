@@ -1,0 +1,101 @@
+
+
+.product
+  padding-top: 84px
+
+  .subNav
+
+    li.active
+      a
+        color: #0E8A00
+        font-weight: 700
+
+    li
+      margin-right: 2.5rem
+      +phone
+        margin-right: 1.5rem
+      a
+        color: #666666
+    p
+      font-size: 1.5rem 
+      line-height: 1.16
+      +phone
+        font-size: 1rem
+      
+  
+  .number
+    font-size: 0.75rem
+
+  &_list
+
+    .lg-card
+      .card-img-top
+        height: 480px
+        +phone
+          height: 161px
+    .sm-card
+      .card-img-top
+        height: 240px
+        +phone
+          height: 161px
+
+    .card
+      position: relative
+      &-img-top
+        object-fit: cover
+        height: 350px
+        +phone
+          height: 161px
+
+      p
+        margin-bottom: 0
+      .saleMark
+        position: absolute
+        top: 1rem
+        right: 1rem
+        font-size: 0.875rem
+
+      &-title
+        +phone
+          font-size: 1.25rem
+      &-text
+        font-size: 0.875rem
+  .pagination
+
+    .page-item.active
+      .page-link
+        position: relative
+        color: #0E8A00
+        background: #fff
+        font-weight: 700
+        &::before
+          position: absolute
+          bottom: 8px
+          left: 50%
+          transform: translateX(-50%)
+          content: ''
+          width: 40%
+          height: 1px
+          background: #0E8A00
+
+    .page-link
+      border: 0
+      font-size: 1.5rem
+      color: #121212
+
+  &-rwd-change-style0
+    +phone
+      padding-right: 4px
+  &-rwd-change-style1
+    +phone
+      padding-left: 4px
+  &-rwd-change-style2
+    +phone
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      li
+        width: calc(50% - 4px )
+        &:nth-child(2n+1)
+          margin-right: 8px
+          

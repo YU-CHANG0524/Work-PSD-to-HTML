@@ -1,0 +1,547 @@
+
+main.result
+
+  section.search.m-search_bar.m-search_bar-style
+
+    //- 767以下的search bar
+    ul.search_bar-rwd
+      li 曼谷
+      li 17 June - 19 June
+      li 2 成人・1 房
+
+
+
+    .search-wrap.m-search_bar-wrap
+      form.form-style(action="", method="post")
+        
+        .form-group
+          label.m-search_bar-local
+            span.material-icons.form-group-icon place
+            input.jq_local-input( type="text" id="id_location")
+            label.fake-placeholder.jq_fake-placeholder(for="id_location") Destination
+            p.input-result.jq_input-result
+          ul.form-group_list.hot-local-list.jq_hot-local-list 
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Bangkok
+                span.jq_country Thailand
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Osaka
+                span.jq_country Japan
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Roma
+                span.jq_country Italy
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Paris
+                span.jq_country London
+            li.jq_local_list_item
+              span.material-icons star_rate
+              .value
+                p.jq_town Reykjavik
+                span.jq_country Iceland
+        .form-group
+          label.m-search_bar-date
+            span.material-icons.form-group-icon date_range
+            input.jq_local-date.jq_date( type="text" id="id_date" readonly)
+            label.fake-placeholder.jq_fake-placeholder_2(for="id_date") Check-in / out
+            .block.jq_block
+              .check-in
+                p.rwd-title Check-in / out
+                p.range Check-in
+                p.date  17 June
+              .check-out
+                p.range Check-out
+                p.date  19 June
+            p.input-result.jq_input-date
+        
+        .form-group
+          label.m-search_bar-guest
+            span.material-icons.form-group-icon person
+            input.jq_local-guest( type="text" id="id_guest" readonly)
+            label.fake-placeholder.jq_fake-placeholder_1(for="id_guest") Guests
+            p.input-result.jq_input-guest
+
+          ul.form-group_list.guest-item.jq_guest-item
+            li
+              p.attribute Adult 
+              .btn-group
+                a.material-icons(href="") remove
+                span 2
+                a.material-icons(href="") add
+            li
+              p.attribute Child
+              .btn-group
+                a.material-icons(href="") remove
+                span 0
+                a.material-icons(href="") add
+            li
+              p.attribute Room
+              .btn-group
+                a.material-icons(href="") remove
+                span 1
+                a.material-icons(href="") add
+        
+        a.submit-style(href="../result/result.html") SEARCH
+
+  section.g-container.g-section-space
+    .result-wrap
+      .result_side.jq_result_side
+
+        //- 只有在手機會出現 
+        .result_side-rwd.jq_result_side-rwd
+          a.bar(href="#")
+            span.material-icons filter_list
+            p FILTER
+          a(href="").jq_clear-result_side-rwd
+            span.material-icons clear
+        //- 只有在手機出現overlay
+        .result_side-rwd-overlay
+          h6 Find 1,245 results
+          .btn-group
+            a(href="") Clear
+            a(href="") Filter
+        
+
+
+        h3.u-sub
+          p.u-title 曼谷
+          span.u-sub_mark 3,240
+        form.form-style
+          h4.small-title 交易
+          .form-group
+            .box
+              input(type="checkbox" id="free") 
+              label(for="free") 免費取消
+            .box
+              input(type="checkbox" id="prepayment") 
+              label(for="prepayment") 無預付款
+            .box
+              input(type="checkbox" id="offers") 
+              label(for="offers") 特別優惠
+
+          h4.small-title 熱門篩選
+          .form-group
+            .box
+              input(type="checkbox" id="included") 
+              label(for="included") 包含早餐
+            .box
+              input(type="checkbox" id="Wi-Fi") 
+              label(for="Wi-Fi") 免費 Wi-Fi
+            .box
+              input(type="checkbox" id="pool") 
+              label(for="pool") 游泳池
+          h4.small-title 預算
+          .form-group.range-select
+            input.js-range-slider(type="text" name="my_range" value="" )
+
+            .range-select_block
+              .range-select_block_item
+                h6 最小
+                p TWD 
+                  span.jq_range-value-min
+                    |800
+              .range-select_block_item
+                h6 最大
+                p TWD 
+                  span.jq_range-value-max
+                    |4000+
+
+          h4.small-title 評分
+          .form-group
+            .box
+              input(type="checkbox" id="free")
+              .star-group 
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+              span.star-sum 5.0
+            .box
+              input(type="checkbox" id="prepayment") 
+              .star-group 
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+              span.star-sum 4.0
+            .box
+              input(type="checkbox" id="offers") 
+              .star-group 
+                span.material-icons star_rate
+                span.material-icons star_rate
+                span.material-icons star_rate
+              span.star-sum 3.0
+            .box
+              input(type="checkbox" id="offers") 
+              .star-group 
+                span.material-icons star_rate
+                span.material-icons star_rate
+              span.star-sum 2.0
+            .box
+              input(type="checkbox" id="offers") 
+              .star-group 
+                span.material-icons star_rate
+              span.star-sum 1.0
+            .box
+              input(type="checkbox" id="Unrated") 
+              label(for="Unrated") 未分級
+          h4.small-title 住宿類型
+          .form-group
+            .box
+              input(type="checkbox" id="Hotel") 
+              label(for="Hotel") 旅館
+            .box
+              input(type="checkbox" id="Apartment") 
+              label(for="Apartment") 公寓
+            .box
+              input(type="checkbox" id="Unique") 
+              label(for="Unique") 客製化
+            .box
+              input(type="checkbox" id="Hostel") 
+              label(for="Hostel") 酒店
+      article.result_content
+        .result_aside-rwd
+          h3.u-sub
+            p.u-title 曼谷
+            span.u-sub_mark 3,240
+          .btn-group
+            a(href="").jq_result_aside-rwd_filter
+              span.material-icons filter_list
+              p FILTER
+            a(href="").jq_result_aside-rwd_sort
+              span.material-icons sort
+              p SORT
+
+        ul.result_content_nav.jq_result_content_nav
+          li.active 推薦的
+          li 最便宜的
+          li 最好的品質
+          li 離市中心近
+
+        ul.result_content_list
+          
+          li
+            a(href="../detail/detail.html").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1560747571-e9b3c7e7868c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Rachada, Bangkok
+                    p.space ・2 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 4.0 (283)
+                  h3.u-card_title Rachada Hotel
+
+                .msg-block
+                  p.type Deluxe Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+                    span.u-badges_item Free cancellation
+                    span.u-badges_item No prepayment
+
+                .price-block
+                  span.night per night
+                  p.price TWD 1,980
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1572177215152-32f247303126?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Phaya Thai, Bangkok
+                    p.space ・2.9 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 5.0 (121)
+                  h3.u-card_title Forever Place
+
+                .msg-block
+                  p.type Standard Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+                    span.u-badges_item Free cancellation
+
+                .price-block
+                  span.night per night
+                  del TWD 1,980
+                  p.price.active TWD 1,680
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1544097935-e6d136448533?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Bangkapi, Bangkok
+                    p.space ・14 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 4.0 (325)
+                  h3.u-card_title LUV Hotel
+
+                .msg-block
+                  p.type Standard Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+                    span.u-badges_item Free cancellation
+
+                .price-block
+                  span.night per night
+                  p.price TWD 2,460
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1584931999791-83ae17b2a4d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Chatuchack, Bangkok
+                    p.space ・12 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 4.0 (204)
+                  h3.u-card_title WOW Life Hotel
+
+                .msg-block
+                  p.type Standard Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+                    span.u-badges_item No prepayment
+
+                .price-block
+                  span.night per night
+                  del TWD 2,880
+                  p.price.active TWD 2,240
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/flagged/photo-1570737143701-65c082fd72d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Chatuchack, Bangkok
+                    p.space ・8 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 5.0 (189)
+                  h3.u-card_title Celebrity Palace
+
+                .msg-block
+                  p.type Standard Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+                    span.u-badges_item No prepayment
+
+                .price-block
+                  span.night per night
+                  del TWD 2,120
+                  p.price.active TWD 1,890
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Rang Rak, Bangkok
+                    p.space ・4.4 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 4.0 (112)
+                  h3.u-card_title RR Space
+
+                .msg-block
+                  p.type Deluxe Double Room
+                  p.visitor 2 guests・1 bed (King size)
+                  .u-badges
+                    span.u-badges_item Free cancellation
+
+                .price-block
+                  span.night per night
+                  p.price TWD 2,090
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1576354302919-96748cb8299e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=568&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Watana, Bangkok
+                    p.space ・6 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 5.0 (102)
+                  h3.u-card_title Bangkok Hostel
+                .msg-block
+                  p.type Deluxe Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+                    span.u-badges_item Free cancellation
+                    span.u-badges_item No prepayment
+
+                .price-block
+                  span.night per night
+                  p.price TWD 880
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1571385761622-aa2467d9f4b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Watana, Bangkok
+                    p.space ・6 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 3.0 (608)
+                  h3.u-card_title Watana First Hostel
+
+                .msg-block
+                  p.type Twin Room
+                  p.visitor 2 guests・2 beds (2 twins)
+                  .u-badges
+                    span.u-badges_item Free cancellation
+
+                .price-block
+                  span.night per night
+                  del TWD 1,280
+                  p.price.active TWD 790
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1557127275-f8b5ba93e24e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Din Daeng, Bangkok
+                    p.space ・7 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 4.0 (138)
+                  h3.u-card_title DD Space
+
+                .msg-block
+                  p.type Standard Double Room
+                  p.visitor 2 guests・1 bed (Queen size)
+                  .u-badges
+
+
+                .price-block
+                  span.night per night
+                  del TWD 1,700
+                  p.price.active TWD 1,240
+          li
+            a(href="#").u-card
+              .u-card_img
+                img(src="https://images.unsplash.com/photo-1565112791128-f7f4c2d487c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", alt="")
+              .u-card_body
+
+                .title-block
+                  .u-card_subtitle
+                    p.city Din Daeng, Bangkok
+                    p.space ・7 km from center
+                  .star-block
+                    .star-group 
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                      span.material-icons star_rate
+                    span.star-sum 3.0 (446)
+                  h3.u-card_title Dininn Hotel
+
+                .msg-block
+                  p.type Deluxe Twin Room
+                  p.visitor 2 guests・2 beds (2 twins)
+                  .u-badges
+
+                .price-block
+                  span.night per night
+                  p.price TWD 3,450
+        
+        .u-pagination
+          a.btn.outline(href="#", title="title") PREVIOUS
+          a.btn.outline.material-icons.rwd-arrow(href="#", title="title") keyboard_arrow_left
+          ul.pagination-number
+            li.active
+              a(href="") 1
+            li
+              a(href="") 2
+            li
+              a(href="") 3
+            li.rwd-display-none
+              a(href="") 4
+            li.rwd-display-none
+              a(href="") 5
+            li.rwd-display-none
+              a(href="") 6
+            li
+              a(href="") ...
+            li
+              a(href="") 9
+          a.btn(href="#", title="title") NEXT
+          a.btn.outline.material-icons.rwd-arrow(href="#", title="title") keyboard_arrow_right
+
+  section.m-subscribe.m-subscribe-style
+    .m-subscribe-wrap
+      h2.u-title 訂閱獨家優惠
+      .form-group
+        input(type="text" placeholder="您的電子信箱")
+        input.submit-style(type="submit" ,value="訂閱") 
+

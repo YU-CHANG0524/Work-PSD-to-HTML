@@ -1,0 +1,408 @@
+
+.detail
+  margin-top: 10.875rem
+  padding-top: $l
+  +pad
+    margin-top: 9.875rem
+  +phone
+    margin-top: 7.5rem
+    padding-top: 0
+  .search_bar-rwd
+    background: $primary-light
+    display: none
+    padding: 1.25rem 0
+    +phone
+      +flex
+    p
+      font-size: $xs
+      color: $secondary
+      margin-left: 12px
+  .search-wrap
+    +phone
+      display: none
+  .rwd-set
+    +phone
+      max-width: initial
+  
+  &_content
+    +phone
+      position: relative
+  // 箭頭部分
+  .jq_detail_content_slick-pre,.jq_detail_content_slick-next
+    display: none
+    color: $w
+    z-index: 10
+    position: absolute
+    top: 110px
+    +phone
+      display: block
+  .jq_detail_content_slick-pre
+    left: 15px
+  .jq_detail_content_slick-next
+    right: 15px
+
+  &_content_slick
+    display: none
+    +phone
+      display: block
+    li
+      height: 247px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &_content_img
+    display: flex
+    margin-bottom: $l
+    margin-left: -0.25rem
+    margin-right: -0.25rem
+    +phone
+      display: none
+    img
+      border-radius: 4px
+      object-fit: cover
+      width: 100%
+
+    .col-7
+      width: 57.6%
+      padding: 0 0.25rem
+      +pad
+        margin-left: -2px
+        margin-right: -2px
+      img
+        height: 434px
+        +pad
+          height: 268px
+
+    .col-5
+      width: 42.4%
+      padding: 0 0.25rem
+      +pad
+        margin-left: -2px
+        margin-right: -2px
+      
+    .top
+      margin-bottom: 0.5rem
+      +pad
+        margin-bottom: 4px
+      img
+        height: 213px
+        +pad
+          height: 132px
+      
+    .bottom
+      display: flex
+      margin: 0 -0.25rem
+      .left,.right
+        padding: 0 0.25rem
+        +pad
+          padding: 0 2px
+      .left
+        img
+          height: 213px
+          +pad
+            height: 132px
+      .right
+        img
+          height: 151px
+          margin-bottom: 0.5rem
+          +pad
+            height: 93px
+            margin-bottom: 4px
+        a
+          height: 54px
+          +flex
+          background: $secondary-dark
+          font-weight: 700
+          color: $w
+          border-radius: 4px
+          +pad
+            height: 34px
+            font-size: 13px
+
+  &_content_body
+    +phone
+      padding: 0 15px
+
+  &_content_title
+    +flex(flex-start,center)
+    +phone
+      align-items: flex-start
+      flex-direction: column
+    .u-title
+      margin: 0 1rem 0 0
+      +phone
+        font-size: $xl
+    .star-block
+      display: flex
+      height: 19px
+      +phone
+        margin-bottom: 4px
+      .material-icons
+        font-size: 1.125rem
+      .star-sum
+        margin-left: 0.25rem
+        font-size: $s
+        color: $secondary
+        +phone
+          transform: translateY(-2px)
+        
+  .subtitle
+    font-size: $s
+    color: $primary
+    margin-bottom: $l
+    +phone
+      font-size: $xs
+      margin-bottom: 1rem
+  &_content_text
+    font-size: $s
+    color: $secondary
+    width: 57.6%
+    +pad
+      width: 74%
+    +phone
+      width: 100%
+
+  &_select
+    +phone
+      padding: 0 15px
+    .col-6
+      width: 52%
+    .col-2
+      width: 16%
+    .u-title
+      font-size: $l
+      color: $secondary-dark
+      +phone
+        margin-bottom: 1rem
+    &_options
+      display: flex
+      margin-bottom: $xxl
+      +phone
+        display: none
+      ul
+        display: flex
+      li
+        padding: 0.5rem 1rem
+        color: $secondary
+        background: $primary-light
+        margin-right: 0.5rem
+        font-size: $s
+        border-radius: 4px
+      .edit
+        padding: 0.5rem 1rem
+        color: $primary
+        font-weight: 700
+    
+    &_table
+      
+      .col-2
+        +pad
+          width: 16%
+
+      .u-table_head
+        +phone
+          display: none
+        .col-6
+          justify-content: flex-start
+        
+
+      .u-card
+        padding-bottom: $l
+        border-bottom: 1px solid $primary-light
+        margin-bottom: $m
+        +phone
+          flex-direction: column
+          margin-bottom: 0.5rem
+          padding-bottom: 0
+          border: 1px solid $primary-light
+          border-radius: 8px
+          overflow: hidden
+          position: relative
+        &:nth-last-child(1)
+          padding-bottom: 0
+          border: 0
+          margin-bottom: 0
+          +phone
+            border: 1px solid $primary-light
+
+        >div
+          &:nth-child(2)
+            +phone
+              position: absolute
+              left: 46%
+              transform: translateY(122px)
+          &:nth-child(3)
+            +phone
+              width: 55%
+              position: absolute
+              right: 0
+              top: 150px
+              background: $primary-light
+              height: 61px
+              display: flex
+              justify-content: flex-end
+              padding-right: 0.5rem
+          &:nth-child(4)
+            +phone
+              width: 45%
+              background: $primary-light
+                
+
+
+
+        .col-6
+          align-items: flex-start
+          +pad
+            align-items: center
+            width: 52%
+            justify-content: flex-start
+          +phone
+            width: 100%
+            align-items: flex-start
+        
+        &_title
+          font-family: 'Open Sans'
+          margin-bottom: 0
+        &_subtitle
+          font-size: $xs
+          color: $secondary
+          margin-bottom: 1rem
+          +phone
+            margin-bottom: 0.5rem
+        &_img
+          width: 50%
+          +pad
+            width: 42%
+          +phone
+            width: 45%
+          img
+            width: 100%
+            border-radius: 8px 0px 0px 8px;
+            height: 175px
+            +pad
+              height: 150px
+            +phone
+              border-radius: 0
+        &_body
+          width: 50%
+          padding: 0.5rem 0 0.5rem 1rem
+          +pad
+            width: 58%
+            padding: 0 0 0 0.5rem
+          +phone
+            width: 55%
+            padding: 12px 10px 0 8px
+
+      .service
+        color: $secondary
+        font-size: $s
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        height: 99px
+        +pad
+          height: auto
+          flex-direction: row
+        li
+          +flex(flex-start)
+          margin-bottom: 5px
+          +pad
+            margin-bottom: 0
+          &:nth-child(4n)
+            margin-bottom: 0
+            
+        span
+          font-size: 1.125rem
+          margin-right: 0.25rem
+        p
+          text-transform: capitalize
+          +pad
+            display: none
+        
+      .price-block
+        display: flex
+        flex-direction: column
+        .night
+          color: $secondary
+          font-size: $xs
+          +phone
+            display: none
+        del
+          font-size: $s
+          color: $secondary
+        .price
+          color: $secondary-dark
+          font-weight: 700
+          line-height: 1.375rem
+        .price.active
+          color: $primary
+
+      .rooms
+        +flex
+        +phone
+          padding: 1.125rem
+        a
+          &:nth-child(1)
+            margin-right: $l
+            +pad
+              margin-right: 1rem
+        span
+          margin-right: $l
+          +pad
+            margin-right: 1rem
+  
+  &_overlay
+    background: $secondary-dark
+    position: fixed
+    bottom: 0
+    width: 100%
+    border-radius: 8px 8px 0px 0px
+    z-index: 100  
+    transform: translateY(106px)
+    transition: all .5s
+    +phone
+      transform: translateY(185px)
+
+    .g-container
+      padding: $l 0
+      +flex(space-between)
+      +phone
+        flex-direction: column
+        align-items: flex-end
+    .type
+      font-size: $xs
+      color: #FFFFFF98
+    .price
+      font-size: $l
+      font-weight: 700
+      font-family: 'Raleway'
+      color: #FFFFFFDD
+      +phone
+        margin-bottom: $l
+    
+    .btn-group 
+      +flex
+      +phone
+        width: 100%
+      a
+        +phone
+          width: 50%
+          text-align: center
+
+    .cancel-btn,.reserve-btn
+      text-transform: uppercase
+      color: $w
+      padding: 1rem $xl
+      border-radius: 4px
+    .cancel-btn
+      border: 1px solid $w
+      background: $secondary-dark   
+      margin-right: 0.5rem
+    .reserve-btn
+      border: 1px solid $primary
+      background: $primary
+  
+  .detail_overlay.show
+    transform: translateY(0)

@@ -1,0 +1,28 @@
+.fz-14  
+  font-size: 0.875rem
+
+
+.checkbout
+  .header
+    position: static
+  .breadcrumb
+    &-item
+      &:nth-child(n+2)
+        &::before
+          content: '>'
+  
+  &_form
+    input,select
+      line-height: 1
+      height: auto
+    .form-group
+      margin-bottom: 8px
+
+  &_total
+    .card-img-top
+      width: 48px
+      height: 48px
+
+  .banner
+    &_bg
+      background-image: url(https://images.unsplash.com/photo-1523755231516-e43fd2e8dca5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)

@@ -1,0 +1,84 @@
+
+//.header 會員頁樣式
+.header.header-acount-style
+  .header_nav
+    .user-control
+      display: block
+    .header
+      &_sign
+        display: none
+      &_login
+        display: none
+
+
+// header 另外樣式
+.header.header-style
+  background: transparent
+  .header_nav
+    display: none
+  .u-hamburger
+    +phone
+      opacity: 0
+
+//  header 主要樣式
+.header
+  position: fixed
+  top: 0
+  width: 100%
+  background: $w
+  z-index: 10
+  .g-container
+    +flex(space-between)
+    +phone
+      position: relative
+  &_logo
+    +imgReplaceText
+    margin: $l 0
+    +phone
+      +poac
+      margin: 0
+    a
+      width: 96px
+      height: 24px
+  
+  &_nav
+    +flex
+    // +phone
+    //   justify-content: space-between
+    >li
+      margin-left: $xxl
+
+    .u-dropdown
+      &:nth-child(1)
+        +phone
+          display: none
+        
+  nav
+    +phone
+      width: 100%
+      +flex(space-between)
+      padding: 0.5rem 0
+  .user
+    &-control
+      display: none
+      p
+        +phone
+          display: none
+      .u-arrow
+        +phone
+          display: none
+    &-icon
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-right: 0.5rem
+      overflow: hidden
+      img
+        +size($l,$l)
+  .header
+    &_sign
+      +phone
+        display: none
+
+.header.header-shadow
+  transition: all .5s
+  box-shadow: 0 0 5px 

@@ -1,0 +1,77 @@
+//樣式
+
+@mixin size($w,$h:auto)
+  width: $w
+  height: $h
+
+// 下方 border-radius 版本 有需要再替換
+// @mixin size($w,$h:auto,$bdrs:0)
+//     width: $w
+//     height: $h
+//     border-radius: $bdrs
+
+
+@mixin imgReplaceText()
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+
+
+
+//方向性
+
+@mixin flex($jc:center,$ai:center)
+  display: flex 
+  justify-content: $jc
+  align-items: $ai
+
+@mixin poac
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+
+@mixin pos($t:initial,$l:initial)
+  position: absolute
+  top: $t 
+  left: $l
+
+
+
+
+// 物件性
+@mixin fakeLine($width:1px, $height:1px, $backgroundColor:#000) 
+  content: ""
+  display: block
+  width: $width
+  height: $height
+  background-color: $backgroundColor
+
+// 功能性
+
+@mixin stopSelect() 
+  -webkit-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+
+
+// rwd 斷點
+@mixin rwd($max)
+  @media only screen and (max-width: $max + px)  
+    @content
+
+@mixin desk
+  @media only screen and (max-width: 1200px)  
+    @content
+
+@mixin pad
+  @media only screen and (max-width: 992px)  
+    @content
+
+@mixin phone
+  @media only screen and (max-width: 767px)  
+    @content
+
+

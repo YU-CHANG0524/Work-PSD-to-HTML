@@ -1,0 +1,53 @@
+
+
+main.reserve.g-container
+  .reserve-wrap
+    .col-6.pr15
+      h2.u-title Reservation details
+      form.reserve_form(action="")
+        .form-group
+          label(for="name") Name
+          input(type="text" id="name")
+
+        .form-group
+          label(for="email") Email
+          input(type="email" id="email")
+
+        .form-group
+          label(for="phone") Phone (optional)
+          input(type="text" id="phone")
+
+        .form-group
+          a(href="./receive.html").btn Reserve
+          a(href="#").tips Reserve now, pay at stay
+        
+        
+    .col-6.pl15
+      .reserve_check-rwd
+        .total
+          span Total
+          p TWD 4,633
+        a(href="").total-btn.jq_total-btn
+          p Detail
+          span.material-icons keyboard_arrow_down
+      .reserve_check
+        .block
+          h3.subtitle Booking details
+          p.mb-8 17 June 2020 - 19 June 2020・2 nights
+          p.mb-8 2 adults・1 room
+          p.mb-8 Rachada Hotel
+        .block
+          h3.subtitle Price summary
+          .flex
+            p.mb-8 Deluxe Suite with Pool
+            p.mb-8 TWD 3,960
+          .flex
+            p.mb-8 VAT (7%)
+            p.mb-8 TWD 277
+          .flex
+            p.mb-8 Property service charge
+            p.mb-8 TWD 396
+
+        .flex.fz-16
+          p Total
+          p.total-number TWD 4,633
